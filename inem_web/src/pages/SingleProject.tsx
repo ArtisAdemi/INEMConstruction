@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SingleProject = () => {
+const SingleProject: React.FC = () => {
     return (
-        <div>SingleProject</div>
+        <div>SingleProject: Re</div>
     )
 }
 

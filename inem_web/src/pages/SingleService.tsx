@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SingleService = () => {
+const SingleService: React.FC = () => {
     return (
         <div>SingleService</div>
     )
