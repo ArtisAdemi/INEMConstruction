@@ -36,7 +36,7 @@ export const Navbar: React.FC = () => {
     const isActive = (path: string) => location.pathname === path;
 
     return (
-        <div className={`navbar-wrapper w-full ${isAtTop ? "bg-[rgba(255,255,255,0)]" : "bg-[rgba(255,255,255,1)]"} flex justify-between px-[8%] xl:px-[16%] py-4 transition-all duration-700`}>
+        <div className={`navbar-wrapper w-full ${isAtTop ? "bg-[rgba(255,255,255,0)]" : "bg-[rgba(255,255,255,1)]"} flex justify-between px-[8%] xl:px-[16%] py-4 transition-all duration-300`}>
             <div className="">
                 <img className="w-[40%] cursor-pointer" src="#" alt="logo image" onClick={() => redirect("/")} />
             </div>
@@ -69,7 +69,7 @@ export const Navbar: React.FC = () => {
                 )}
             </div>
 
-            {isDrawerOpen && <div className="fixed inset-0 bg-black opacity-50 z-40" onClick={() => setIsDrawerOpen(false)}></div>}
+            {isDrawerOpen && <div className="fixed inset-0 bg-[#FF9723] opacity-90 z-40" onClick={() => setIsDrawerOpen(false)}></div>}
             <div className={`fixed top-0 left-0 w-[70%] h-full bg-white z-50 flex flex-col px-5 py-10 transform transition-transform duration-300 ease-in-out ${isDrawerOpen ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex justify-between w-full mb-10">
                     <img src="#" alt="logo image" className="w-[100px]" />
@@ -81,23 +81,23 @@ export const Navbar: React.FC = () => {
                 </div>
                 <p className="text-[#42526B] font-medium text-sm mb-5">Menu</p>
                 <div className="flex flex-col gap-y-5">
-                    <h2 className={`cursor-pointer hover:text-[#0B63E5] hover:duration-300 font-medium text-lg duration-300 ${isActive("/") ? "font-bold text-[#0B63E5] underline" : "text-[#42526B]"}`} onClick={() => redirect("/")}>
+                    <h2 className={`cursor-pointer hover:text-[#0B63E5] hover:duration-300 font-medium text-lg duration-300 ${isActive("/") ? "font-bold text-[#FF9723] underline" : "text-[#42526B]"}`} onClick={() => redirect("/")}>
                         {isActive("/") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
                         Home
                     </h2>
-                    <h2 className={`cursor-pointer hover:text-[#0B63E5] hover:duration-300 font-medium text-lg duration-300 ${isActive("/projects") ? "font-bold text-[#0B63E5] underline" : "text-[#42526B]"}`} onClick={() => redirect("/projects")}>
+                    <h2 className={`cursor-pointer hover:text-[#FF9723] hover:duration-300 font-medium text-lg duration-300 ${isActive("/projects") ? "font-bold text-[#FF9723] underline" : "text-[#42526B]"}`} onClick={() => redirect("/projects")}>
                         {isActive("/projects") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
                         Projects
                     </h2>
-                    <h2 className={`cursor-pointer hover:text-[#0B63E5] hover:duration-300 font-medium text-lg duration-300 ${isActive("/services") ? "font-bold text-[#0B63E5] underline" : "text-[#42526B]"}`} onClick={() => redirect("/services")}>
+                    <h2 className={`cursor-pointer hover:text-[#FF9723] hover:duration-300 font-medium text-lg duration-300 ${isActive("/services") ? "font-bold text-[#FF9723] underline" : "text-[#42526B]"}`} onClick={() => redirect("/services")}>
                         {isActive("/services") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
                         Services
                     </h2>
-                    <h2 className={`cursor-pointer hover:text-[#0B63E5] hover:duration-300 font-medium text-lg duration-300 ${isActive("/about") ? "font-bold text-[#0B63E5] underline" : "text-[#42526B]"}`} onClick={() => redirect("/about")}>
+                    <h2 className={`cursor-pointer hover:text-[#FF9723] hover:duration-300 font-medium text-lg duration-300 ${isActive("/about") ? "font-bold text-[#FF9723] underline" : "text-[#42526B]"}`} onClick={() => redirect("/about")}>
                         {isActive("/about") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
                         About Us
                     </h2>
-                    <h2 className={`cursor-pointer hover:text-[#0B63E5] hover:duration-300 font-medium text-lg duration-300 ${isActive("/contact") ? "font-bold text-[#0B63E5] underline" : "text-[#42526B]"}`} onClick={() => redirect("/contact")}>
+                    <h2 className={`cursor-pointer hover:text-[#FF9723] hover:duration-300 font-medium text-lg duration-300 ${isActive("/contact") ? "font-bold text-[#FF9723] underline" : "text-[#42526B]"}`} onClick={() => redirect("/contact")}>
                         {isActive("/contact") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
                         Contact
                     </h2>
