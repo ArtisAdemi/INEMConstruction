@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
 
         <div className="xl:flex grid grid-cols-2 gap-3 justify-between  md:w-[70%] w-full mt-4">
           <div className="flex flex-col gap-y-2">
-            <h2 className="font-medium text-[#061C3D] mb-3">Quick Links</h2>
+            <h2 className="font-medium text-[#061C3D] mb-3">Links</h2>
             <h2 className={`cursor-pointer hover:text-[#0B63E5] duration-300 ${isActive("/") ? "font-bold text-[#0B63E5]" : "text-[#838E9E]"}`} onClick={() => redirect("/")}>
               {isActive("/") ? "- Home" : "Home"}
             </h2>
@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
             </h2>
           </div>
 
-          <div className="flex flex-col gap-y-2">
+          {/* <div className="flex flex-col gap-y-2">
             <h2 className="font-medium text-[#061C3D] mb-3">Services</h2>
             <h2 className="text-[#838E9E] cursor-pointer hover:text-[#0B63E5] duration-300">UI/UX Design</h2>
             <h2 className="text-[#838E9E] cursor-pointer hover:text-[#0B63E5] duration-300">Branding</h2>
@@ -59,9 +59,9 @@ export const Footer: React.FC = () => {
             <h2 className="text-[#838E9E] cursor-pointer hover:text-[#0B63E5] duration-300">Dribble</h2>
             <h2 className="text-[#838E9E] cursor-pointer hover:text-[#0B63E5] duration-300">Behance</h2>
             <h2 className="text-[#838E9E] cursor-pointer hover:text-[#0B63E5] duration-300">Themeforest</h2>
-          </div>
+          </div> */}
 
-          <div className="flex flex-col justify-between gap-y-2">
+          {/* <div className="flex flex-col justify-between gap-y-2">
             <div className="text-sm font-medium max-w-[80%] lg:max-w-full flex gap-x-2 items-center bg-[#1DA1F214] rounded-md text-[#061C3D] px-3 py-2 cursor-pointer hover:opacity-90 transform hover:scale-105 duration-300">
               <i className="fab fa-facebook text-[#1877F2]"></i>
               <a href="#">Facebook</a>
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
                 Instagram
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="mb-20 md:mb-0 md:py-8 flex justify-center">
