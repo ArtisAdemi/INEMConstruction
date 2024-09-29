@@ -1,11 +1,12 @@
-import Construction from '../assets/Construction.jpeg'
+import React from "react";
+import HomeSlider from "../components/HomeSlider";
 
-const HomePage = () => {
-    return (
-        <div className="w-full h-2screen">
-            <img src={Construction} alt="hero image" className="w-full h-full object-cover" />
-        </div>
-    )
-}
+const HomePage: React.FC = () => {
+  return (
+    <div className="w-full h-2screen overflow-hidden">
+      <HomeSlider />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
