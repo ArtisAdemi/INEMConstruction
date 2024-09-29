@@ -36,7 +36,7 @@ export const Navbar: React.FC = () => {
     const isActive = (path: string) => location.pathname === path;
 
     return (
-        <div className={`navbar-wrapper w-full ${isAtTop ? "bg-[rgba(255,255,255,0)]" : "bg-[rgba(255,255,255,1)]"} flex justify-between px-[8%] xl:px-[16%] py-4 transition-all duration-300`}>
+        <div className={`navbar-wrapper w-full ${isAtTop ? "bg-[rgba(255,255,255,0)]" : "bg-[rgba(255,255,255,1)]"} flex justify-between px-[8%] xl:px-[16%] py-4 transition-all duration-1000`}>
             <div className="">
                 <img className="w-[40%] cursor-pointer" src="#" alt="logo image" onClick={() => redirect("/")} />
             </div>
