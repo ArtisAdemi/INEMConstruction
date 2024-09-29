@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
+import { Footer } from "./components/Footer";
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Projects from "./pages/Projects";
@@ -23,6 +24,9 @@ function App() {
           <Route path="/services/:slug" element={<SingleService />} />
           <Route path="/projects/:slug" element={<SingleProject />} />
         </Routes>
+        <div>
+          <Footer />
+        </div>
       </Router>
     </div>
   );
