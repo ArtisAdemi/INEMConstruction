@@ -7,7 +7,7 @@ import Construction2 from "../assets/Construction2.jpeg";
 import Construction3 from "../assets/Construction3.jpeg";
 
 const HomeSlider: React.FC = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,

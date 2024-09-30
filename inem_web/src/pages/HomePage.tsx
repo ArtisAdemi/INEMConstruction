@@ -2,6 +2,7 @@ import React from "react";
 import HomeSlider from "../components/HomeSlider";
 import WhatWeDo from "../components/WhatWeDo";
 import HomeAbout from "../components/HomeAbout";
+import RecentProjects from "../components/RecentProjects";
 
 const HomePage: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage: React.FC = () => {
       <HomeSlider />
       <HomeAbout />
       <WhatWeDo />
+      <RecentProjects />
     </div>
   );
 };
