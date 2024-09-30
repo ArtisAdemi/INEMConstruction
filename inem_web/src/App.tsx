@@ -8,9 +8,12 @@ import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import SingleService from "./pages/SingleService";
 import SingleProject from "./pages/SingleProject";
+import CookieConsent from './components/CookieConsent';
+
 function App() {
   return (
     <div>
+      <CookieConsent />
       <Router>
         <div className="fixed top-0 left-0 right-0 z-50">
           <Navbar />
