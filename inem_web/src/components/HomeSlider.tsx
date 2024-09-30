@@ -36,14 +36,14 @@ const HomeSlider: React.FC = () => {
         {sliders.map((slider, index) => (
           <div key={index} className="relative h-screen">
             <img src={slider.image} alt="" className="w-full h-screen object-cover" />
-            <div className="absolute inset-0 flex items-center justify-center z-50">
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-50">
               <div className="text-center">
                 <h3 className="text-xl text-white font-semibold mb-2 leading-tight">{slider.text}</h3>
                 <p className="text-white mb-4">{slider.text}</p>
               </div>
-            </div>
-            <div className="flex align-bottom h-[2%] items-end">
-              <button className="text-blue-600 hover:underline">Learn More</button>
+              <div className="flex align-bottom items-end">
+                <button className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:bg-white hover:duration-500 duration-500 hover:text-[#ff7404]">Learn More</button>
+              </div>
             </div>
           </div>
         ))}
