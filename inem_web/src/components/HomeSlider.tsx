@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import twoworkers from "../assets/twoworkers.jpg";
 import Construction from "../assets/Construction.jpeg";
 import Construction2 from "../assets/Construction2.jpeg";
 import Construction3 from "../assets/Construction3.jpeg";
@@ -18,6 +19,10 @@ const HomeSlider: React.FC = () => {
   };
 
   const sliders = [
+    {
+      image: twoworkers,
+      text: "First Construction Text",
+    },
     {
       image: Construction,
       text: "First Construction Text",
@@ -37,7 +42,7 @@ const HomeSlider: React.FC = () => {
       <Slider {...settings}>
         {sliders.map((slider, index) => (
           <div key={index} className="relative h-screen">
-            <img src={slider.image} alt="" className="w-full h-screen object-cover" />
+            <img src={slider.image} alt="" className="w-full h-screen object-cover brightness-50" />
             <div className="absolute inset-0 flex flex-col items-center justify-center z-50">
               <div className="text-center">
                 <h3 className="text-xl text-white font-semibold mb-2 leading-tight">{slider.text}</h3>
