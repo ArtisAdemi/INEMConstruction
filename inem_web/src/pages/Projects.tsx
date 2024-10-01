@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
                     {projects.map(project => (
                         <div key={project.id} className="overflow-hidden relative group cursor-pointer">
-                            <img className="w-full h-48 object-cover transform transition-transform duration-300 group-hover:scale-125" src={project.image} alt={project.title} />
+                            <img className="w-full h-48 object-cover transform transition-transform duration-300 group-hover:scale-125" src={project.images[0]} alt={project.title} />
                             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center pl-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div className="flex flex-col">
                                     <h2 className="text-white text-xl font-semibold pb-3">{project.title}</h2>

@@ -18,7 +18,7 @@ const RecentProjects: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 mb-5 lg:w-[80%]">
                 {projects.slice(0, 6).map((project, index) => (
                     <div key={index} className="overflow-hidden relative group cursor-pointer">
-                        <img className="w-full transform transition-transform duration-300 group-hover:scale-110" src={project.image} alt={`Project ${index + 1}`} />
+                        <img className="w-full transform transition-transform duration-300 group-hover:scale-110" src={project.images[0]} alt={`Project ${index + 1}`} />
                         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center pl-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div className="flex flex-col">
                                 <h2 className="text-white text-xl font-semibold pb-3">{project.title}</h2>
