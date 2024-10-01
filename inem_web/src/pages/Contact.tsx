@@ -134,7 +134,7 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
                 <div className='mt-8 flex justify-center'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11810.725693658163!2d21.10579587308559!3d42.26397536913569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354781ff1754e19%3A0xcf247a1d041c6277!2z0JHRgNC-0LQ!5e0!3m2!1sen!2sus!4v1727707893938!5m2!1sen!2sus" className='w-full h-[400px]' loading="lazy">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11810.725693658163!2d21.10579587308559!3d42.26397536913569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354781ff1754e19%3A0xcf247a1d041c6277!2z0JHRgNC-0LQ!5e0!3m2!1sfr!2sfr!4v1727707893938!5m2!1sfr!2sfr" className='w-full h-[400px]' loading="lazy">
                     </iframe>
                 </div>
             </div>
