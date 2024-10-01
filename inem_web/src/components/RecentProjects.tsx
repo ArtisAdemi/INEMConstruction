@@ -7,6 +7,7 @@ const RecentProjects: React.FC = () => {
     const navigate = useNavigate();
 
     const redirect = (path: string) => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         navigate(path);
     }
 

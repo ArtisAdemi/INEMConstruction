@@ -57,5 +57,61 @@ export const projects = [
         "category": "COMMERCIAL",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
+    {
+        "id": 8,
+        "title": "PROJECT 8",
+        "slug": "project-8",
+        "image": project5,
+        "category": "COMMERCIAL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
+    },
+    {
+        "id": 9,
+        "title": "PROJECT 9",
+        "slug": "project-9",
+        "image": project5,
+        "category": "COMMERCIAL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
+    },
+    {
+        "id": 10,
+        "title": "PROJECT 10",
+        "slug": "project-10",
+        "image": project5,
+        "category": "COMMERCIAL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
+    },
+    {
+        "id": 11,
+        "title": "PROJECT 11",
+        "slug": "project-11",
+        "image": project5,
+        "category": "COMMERCIAL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
+    },
+    {
+        "id": 12,
+        "title": "PROJECT 12",
+        "slug": "project-12",
+        "image": project5,
+        "category": "COMMERCIAL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
+    },
+    {
+        "id": 13,
+        "title": "PROJECT 13",
+        "slug": "project-13",
+        "image": project5,
+        "category": "COMMERCIAL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
+    },
+    {
+        "id": 14,
+        "title": "PROJECT 14",
+        "slug": "project-14",
+        "image": project5,
+        "category": "COMMERCIAL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
+    },
 ];
 

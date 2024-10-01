@@ -46,13 +46,13 @@ export const Footer: React.FC = () => {
             <h2 className={`cursor-pointer hover:text-[#FF9723] duration-300 ${isActive("/") ? "font-bold text-[#FF9723]" : "text-[#999999]"}`} onClick={() => redirect("/")}>
               {isActive("/") ? "- Home" : "Home"}
             </h2>
-            <h2 className={`cursor-pointer hover:text-[#FF9723] duration-300 ${isActive("/about") ? "font-bold text-[#FF9723]" : "text-[#999999]"}`} onClick={() => redirect("/about")}>
+            <h2 className={`cursor-pointer hover:text-[#FF9723] duration-300 ${isActive("/projects") ? "font-bold text-[#FF9723]" : "text-[#999999]"}`} onClick={() => redirect("/projects")}>
               {isActive("/projects") ? "- Projects" : "Projects"}
             </h2>
             <h2 className={`cursor-pointer hover:text-[#FF9723] duration-300 ${isActive("/services") ? "font-bold text-[#FF9723]" : "text-[#999999]"}`} onClick={() => redirect("/services")}>
               {isActive("/services") ? "- Services" : "Services"}
             </h2>
-            <h2 className={`cursor-pointer hover:text-[#FF9723] duration-300 ${isActive("/projects") ? "font-bold text-[#FF9723]" : "text-[#999999]"}`} onClick={() => redirect("/projects")}>
+            <h2 className={`cursor-pointer hover:text-[#FF9723] duration-300 ${isActive("/about") ? "font-bold text-[#FF9723]" : "text-[#999999]"}`} onClick={() => redirect("/about")}>
               {isActive("/about") ? "- About Us" : "About Us"}
             </h2>
             <h2 className={`cursor-pointer hover:text-[#FF9723] duration-300 ${isActive("/contact") ? "font-bold text-[#FF9723]" : "text-[#999999]"}`} onClick={() => redirect("/contact")}>
