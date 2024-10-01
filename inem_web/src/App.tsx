@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
@@ -8,30 +8,42 @@ import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import SingleService from "./pages/SingleService";
 import SingleProject from "./pages/SingleProject";
-import CookieConsent from './components/CookieConsent';
+import { NotFound } from "./pages/NotFound";
+import CookieConsent from "./components/CookieConsent";
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  const isNotFound = !["/", "/contact", "/projects", "/projects/:id", "/services", "/services/:slug", "/about"].includes(location.pathname);
+
   return (
     <div>
       <CookieConsent />
-      <Router>
-        <div className="fixed top-0 left-0 right-0 z-50">
-          <Navbar />
-        </div>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:slug" element={<SingleService />} />
-          <Route path="/projects/:slug" element={<SingleProject />} />
-        </Routes>
-        <div>
-          <Footer />
-        </div>
-      </Router>
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/:slug" element={<SingleService />} />
+        <Route path="/projects/:slug" element={<SingleProject />} />
+        <Route path="/notfound" element={<NotFound />} />
+      </Routes>
+      {isNotFound && <NotFound />}
+      <div>
+        <Footer />
+      </div>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
