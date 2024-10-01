@@ -115,20 +115,20 @@ const Contact: React.FC = () => {
                 <div className='flex flex-col items-center'>
                     <h2 className='text-2xl font-bold'>REACHING OUR OFFICE</h2>
                     <h3 className='text-4xl font-bold mt-2'>FIND OUR LOCATION</h3>
-                    <div className='flex justify-center mt-8 space-x-16 w-[80%]'>
-                        <div className='bg-[#252525] text-white p-3 w-1/3'>
-                            <div className='text-yellow-500 text-4xl mb-4'>📍</div>
-                            <h4 className='text-xl font-bold'>VISIT OUR OFFICE</h4>
+                    <div className='flex flex-col lg:flex-row justify-center mt-8 space-y-2 lg:space-y-0 lg:space-x-16 w-full lg:w-[80%]'>
+                        <div className='bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3'>
+                            <div className='text-yellow-500 text-2xl lg:text-4xl mb-4'>📍</div>
+                            <h4 className='lg:text-xl font-bold'>VISIT OUR OFFICE</h4>
                             <p>9051 Constra Incorporate, USA</p>
                         </div>
-                        <div className='bg-[#252525] text-white p-3 w-1/3'>
-                            <div className='text-yellow-500 text-4xl mb-4'>📧</div>
-                            <h4 className='text-xl font-bold'>EMAIL US</h4>
+                        <div className='bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3'>
+                            <div className='text-yellow-500 text-2xl lg:text-4xl mb-4'>📧</div>
+                            <h4 className='lg:text-xl font-bold'>EMAIL US</h4>
                             <p>office@Constra.com</p>
                         </div>
-                        <div className='bg-[#252525] text-white p-3 w-1/3'>
-                            <div className='text-yellow-500 text-4xl mb-4'>📞</div>
-                            <h4 className='text-xl font-bold'>CALL US</h4>
+                        <div className='bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3'>
+                            <div className='text-yellow-500 text-2xl lg:text-4xl mb-4'>📞</div>
+                            <h4 className='lg:text-xl font-bold'>CALL US</h4>
                             <p>(+9) 847-291-4353</p>
                         </div>
                     </div>
@@ -141,8 +141,8 @@ const Contact: React.FC = () => {
             <div className='mt-8 px-[16%]'>
                 <h2 className='text-2xl font-bold'>WE LOVE TO HEAR</h2>
                 <form className='mt-4 space-y-4 py-6' onSubmit={handleSubmit}>
-                    <div className='flex space-x-4'>
-                        <div className='w-1/3'>
+                    <div className='flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:!space-x-4'>
+                        <div className='w-full lg:w-1/3'>
                             <input
                                 type='text'
                                 name='name'
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
                             />
                             {errors.name && <p className='text-red-500'>{errors.name}</p>}
                         </div>
-                        <div className='w-1/3'>
+                        <div className='w-full lg:w-1/3'>
                             <input
                                 type='email'
                                 name='email'
@@ -166,7 +166,7 @@ const Contact: React.FC = () => {
                             />
                             {errors.email && <p className='text-red-500'>{errors.email}</p>}
                         </div>
-                        <div className='w-1/3'>
+                        <div className='w-full lg:w-1/3'>
                             <input
                                 type='text'
                                 name='subject'
