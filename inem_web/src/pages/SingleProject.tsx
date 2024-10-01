@@ -1,32 +1,48 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import { projects } from '../assets/projects';
 
 const SingleProject: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
     const project = projects.find(p => p.slug === slug);
     const images = project?.images;
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const selectedImage = images ? images[currentIndex] : '';
+    const navigate = useNavigate();
 
     if (!project) {
         return <div>Project not found</div>;
     }
 
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 && images ? images.length - 1 : prevIndex - 1));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (images ? (prevIndex === images.length - 1 ? 0 : prevIndex + 1) : prevIndex));
+    };
+
+    const redirect = (path: string) => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        navigate(path);
+    }
+
     return (
-        <div className="container mx-auto py-12 px-4 lg:px-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="container w-screen">
+            <div className='h-[300px] relative w-screen'>
+                <img src={images ? images[0] : ''} alt="Contact" className='w-full h-full object-cover' />
+                <div className='absolute inset-0 bg-black opacity-50'></div> {/* Semi-transparent overlay */}
+                <div className='absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2'>
+                    <h1 className='text-2xl font-bold'>Projects</h1>
+                </div>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 w-screen gap-8 py-12 px-[16%]">
                 <div className="relative">
                     <div className="carousel">
                         <div className="carousel-inner relative overflow-hidden w-full">
-                            <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden defaultChecked />
-                            <div className="carousel-item absolute opacity-0" style={{ height: '50vh' }}>
-                                <img src={images ? images[0] : ''} className="block h-full w-full object-cover" alt="Project" />
-                            </div>
-                            <input className="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden />
-                            <div className="carousel-item absolute opacity-0" style={{ height: '50vh' }}>
-                                <img src={images ? images[1] : ''} className="block h-full w-full object-cover" alt="Project" />
-                            </div>
-                            <label htmlFor="carousel-2" className="carousel-control prev control-1">‹</label>
-                            <label htmlFor="carousel-1" className="carousel-control next control-2">›</label>
+                            <img src={selectedImage} alt="" className='w-full h-[375px] object-cover' />
+                            <button onClick={handlePrev} className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2">‹</button>
+                            <button onClick={handleNext} className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2">›</button>
                         </div>
                     </div>
                 </div>
@@ -51,7 +67,7 @@ const SingleProject: React.FC = () => {
                     <div className="mb-4">
                         <strong>Categories:</strong> Commercial, Interiors
                     </div>
-                    <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded">VIEW PROJECT</button>
+                    <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contact Us</button>
                 </div>
             </div>
         </div>

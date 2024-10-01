@@ -28,7 +28,7 @@ const RecentProjects: React.FC = () => {
                     </div>
                 ))}
             </div>
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded" onClick={() => redirect('/projects')}>VIEW ALL PROJECTS</button>
+            <button className="bg-[#FF9723] hover:opacity-80 text-white py-2 px-4 rounded" onClick={() => redirect('/projects')}>VIEW ALL PROJECTS</button>
         </div>
     );
 };
