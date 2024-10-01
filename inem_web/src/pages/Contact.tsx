@@ -24,6 +24,23 @@ const Contact: React.FC = () => {
             ...formData,
             [name]: value
         });
+
+        // Real-time validation
+        let error = '';
+        if (name === 'email') {
+            if (!value) {
+                error = 'Email is required';
+            } else if (!/\S+@\S+\.\S+/.test(value)) {
+                error = 'Email address is invalid';
+            }
+        } else if (!value) {
+            error = `${name.charAt(0).toUpperCase() + name.slice(1)} is required`;
+        }
+
+        setErrors({
+            ...errors,
+            [name]: error
+        });
     };
 
     const validateForm = () => {
@@ -123,7 +140,7 @@ const Contact: React.FC = () => {
             </div>
             <div className='mt-8 px-[16%]'>
                 <h2 className='text-2xl font-bold'>WE LOVE TO HEAR</h2>
-                <form className='mt-4 space-y-4' onSubmit={handleSubmit} onChange={validateForm}>
+                <form className='mt-4 space-y-4' onSubmit={handleSubmit}>
                     <div className='flex space-x-4'>
                         <div className='w-1/3'>
                             <input
