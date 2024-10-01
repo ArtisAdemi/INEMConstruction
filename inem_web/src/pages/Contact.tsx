@@ -147,9 +147,10 @@ const Contact: React.FC = () => {
                                 type='text'
                                 name='name'
                                 placeholder='Name'
-                                className='w-full p-2 border border-gray-300'
+                                className='w-full bg-transparent p-2 border border-gray-300'
                                 value={formData.name}
                                 onChange={handleChange}
+                                autoComplete='off'
                             />
                             {errors.name && <p className='text-red-500'>{errors.name}</p>}
                         </div>
@@ -158,9 +159,10 @@ const Contact: React.FC = () => {
                                 type='email'
                                 name='email'
                                 placeholder='Email'
-                                className='w-full p-2 border border-gray-300'
+                                className='w-full bg-transparent p-2 border border-gray-300'
                                 value={formData.email}
                                 onChange={handleChange}
+                                autoComplete='off'
                             />
                             {errors.email && <p className='text-red-500'>{errors.email}</p>}
                         </div>
@@ -183,6 +185,7 @@ const Contact: React.FC = () => {
                             className='w-full p-2 border border-gray-300 h-40'
                             value={formData.message}
                             onChange={handleChange}
+                            autoComplete='off'
                         ></textarea>
                         {errors.message && <p className='text-red-500'>{errors.message}</p>}
                     </div>
