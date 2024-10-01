@@ -140,7 +140,7 @@ const Contact: React.FC = () => {
             </div>
             <div className='mt-8 px-[16%]'>
                 <h2 className='text-2xl font-bold'>WE LOVE TO HEAR</h2>
-                <form className='mt-4 space-y-4' onSubmit={handleSubmit}>
+                <form className='mt-4 space-y-4 py-6' onSubmit={handleSubmit}>
                     <div className='flex space-x-4'>
                         <div className='w-1/3'>
                             <input
@@ -187,7 +187,7 @@ const Contact: React.FC = () => {
                         {errors.message && <p className='text-red-500'>{errors.message}</p>}
                     </div>
                     <div className='text-right'>
-                        <button type='submit' className='bg-yellow-500 text-white px-4 py-2 font-bold'>SEND MESSAGE</button>
+                        <button type='submit' className='bg-yellow-500 hover:bg-yellow-600 rounded-md text-white px-4 py-2 font-bold'>SEND MESSAGE</button>
                     </div>
                 </form>
             </div>
