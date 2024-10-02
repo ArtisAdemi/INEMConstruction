@@ -24,13 +24,20 @@ const Projects: React.FC = () => {
                 <h1 className="text-4xl font-bold text-center mb-8 pt-10">Our Featured Projects</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
                     {projects.map(project => (
-                        <div key={project.id} className="overflow-hidden relative group cursor-pointer">
-                            <img className="w-full h-48 object-cover transform transition-transform duration-300 group-hover:scale-125" src={project.images[0]} alt={project.title} />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center pl-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <div className="flex flex-col">
-                                    <h2 className="text-white text-xl font-semibold pb-3">{project.title}</h2>
-                                    <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-1 px-2 rounded" onClick={() => redirect(`/projects/${project.slug}`)}>VIEW PROJECT</button>
+                        <div key={project.id} className="">
+                            <div className='overflow-hidden relative group cursor-pointer'>
+                                <img className="w-full h-48 object-cover transform transition-transform duration-300 group-hover:scale-125 z-0" src={project.images[0]} alt={project.title} />
+                                <div>
+                                    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center pl-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                        <div className="flex flex-col absolute bottom-1 left-3">
+                                            <h2 className="text-white text-start text-xl font-semibold pb-3">{project.title}</h2>
+                                            <p className='text-white text-sm text-start overflow-hidden text-ellipsis line-clamp-2'>{project.description}</p>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div className='flex justify-start'>
+                                <button className="bg-yellow-500 hover:bg-yellow-600 text-white text-start py-1 px-2 rounded mt-2 relative z-20" onClick={() => redirect(`/projects/${project.slug}`)}>VIEW PROJECT</button>
                             </div>
                         </div>
                     ))}
