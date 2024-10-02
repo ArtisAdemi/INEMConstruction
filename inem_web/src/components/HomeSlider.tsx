@@ -9,7 +9,7 @@ import Construction3 from "../assets/Construction3.jpeg";
 import arrow from "../assets/decorations/ArrowLeft.svg";
 
 const HomeSlider: React.FC = () => {
-  let sliderRef = useRef<Slider | null>(null);
+  const sliderRef = useRef<Slider | null>(null);
   const next = () => {
     if (sliderRef.current) {
       sliderRef.current.slickNext();
@@ -51,31 +51,31 @@ const HomeSlider: React.FC = () => {
   ];
 
   return (
-    <div className="slider-wrapper bg-center bg-cover">
+    <div className="slider-wrapper bg-center bg-cover relative">
       <Slider ref={sliderRef} {...settings}>
         {sliders.map((slider, index) => (
           <div key={index} className="relative h-screen">
             <img src={slider.image} alt="" className="w-full h-screen object-cover brightness-50" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-50">
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
               <div className="text-center">
                 <h3 className="text-7xl text-white font-semibold mb-2 leading-tight">{slider.text}</h3>
                 <p className="text-white mb-4">{slider.text}</p>
               </div>
               <div className="flex align-bottom items-end">
-                <button className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:bg-white hover:duration-500 duration-500 hover:text-[#ff7404]">Learn More</button>
-              </div>
-              <div className="text-center hidden absolute lg:flex justify-between inset-0 w-full overflow-hidden">
-                <button className="button p-3 rounded-lg hover:scale-105 duration-300 bg-transparent text-white font-semibold" onClick={previous}>
-                  <img src={arrow} alt="" />
-                </button>
-                <button className="button !p-3 rounded-lg hover:scale-105 duration-300 bg-transparent text-white font-semibold" onClick={next}>
-                  <img src={arrow} alt="" className="rotate-180 text-white" />
-                </button>
+                <button className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:bg-white hover:duration-500 duration-500 hover:text-[#ff7404] z-30 relative">Learn More</button>
               </div>
             </div>
           </div>
         ))}
       </Slider>
+      <div className="absolute inset-0 flex justify-between items-center z-40 pointer-events-none">
+        <button className="button p-3 rounded-lg hover:scale-105 duration-300 bg-transparent text-white font-semibold pointer-events-auto" onClick={previous}>
+          <img src={arrow} alt="" className="filter invert sepia saturate-100 hue-rotate-60 brightness-100 contrast-100" />
+        </button>
+        <button className="button !p-3 rounded-lg hover:scale-105 duration-300 bg-transparent text-white font-semibold pointer-events-auto" onClick={next}>
+          <img src={arrow} alt="" className="rotate-180 filter invert sepia saturate-100 hue-rotate-60 brightness-100 contrast-100" />
+        </button>
+      </div>
     </div>
   );
 };
