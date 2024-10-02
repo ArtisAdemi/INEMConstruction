@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
@@ -11,10 +11,17 @@ import SingleProject from "./pages/SingleProject";
 import { NotFound } from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
 
-function AppContent() {
-  const location = useLocation();
-  const isNotFound = !["/", "/contact", "/projects", "/projects/:id", "/services", "/services/:slug", "/about"].includes(location.pathname);
+const routes = [
+  { path: "/", element: <HomePage /> },
+  { path: "/contact", element: <Contact /> },
+  { path: "/about", element: <AboutUs /> },
+  { path: "/projects", element: <Projects /> },
+  { path: "/services", element: <Services /> },
+  { path: "/services/:slug", element: <SingleService /> },
+  { path: "/projects/:slug", element: <SingleProject /> },
+];
 
+function AppContent() {
   return (
     <div>
       <CookieConsent />
@@ -22,16 +29,11 @@ function AppContent() {
         <Navbar />
       </div>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/services/:slug" element={<SingleService />} />
-        <Route path="/projects/:slug" element={<SingleProject />} />
-        <Route path="/notfound" element={<NotFound />} />
+        {routes.map(route => (
+          <Route key={route.path} path={route.path} element={route.element} />
+        ))}
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      {isNotFound && <NotFound />}
       <div>
         <Footer />
       </div>
