@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
       </div>
       <HomeAbout />
       <div className="mt-12 px-[8%] xl:px-[16%] justify-between flex flex-col gap-y-6 mb-10">
-        <div>
+        <div className="hidden xl:block">
           <img src={Construction} alt="" />
         </div>
         <p className="text-xl text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia sequi dolores nemo minus accusantium non modi, laudantium obcaecati eum alias rem amet error est tempora repudiandae eaque ad rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut voluptate pariatur, sunt atque sequi a quasi perspiciatis ad autem ea nemo accusantium ipsa numquam amet enim nulla nihil adipisci?</p>

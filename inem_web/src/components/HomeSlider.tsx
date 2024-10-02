@@ -58,7 +58,7 @@ const HomeSlider: React.FC = () => {
             <img src={slider.image} alt="" className="w-full h-screen object-cover brightness-50" />
             <div className="absolute inset-0 flex flex-col items-center justify-center z-50">
               <div className="text-center">
-                <h3 className="text-7xl text-white font-semibold mb-2 leading-tight">{slider.text}</h3>
+                <h3 className="text-3xl xl:text-7xl text-white font-semibold mb-2 leading-tight">{slider.text}</h3>
                 <p className="text-white mb-4">{slider.text}</p>
               </div>
               <div className="flex align-bottom items-end">
