@@ -9,6 +9,7 @@ export const services = [
         description: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
         image: project5,
         icon: WhatWeDo1, // Replace with actual icon
+        whatYouShouldKnow: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ export const services = [
         description: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
         image: project5,
         icon: WhatWeDo2, // Replace with actual icon
+        whatYouShouldKnow: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ export const services = [
         description: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
         image: project5,
         icon: WhatWeDo3, // Replace with actual icon
+        whatYouShouldKnow: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
     },
     {
         id: 4,
@@ -33,6 +36,7 @@ export const services = [
         description: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
         image: project5,
         icon: WhatWeDo4, // Replace with actual icon
+        whatYouShouldKnow: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
     },
     {
         id: 5,
@@ -41,6 +45,7 @@ export const services = [
         description: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
         image: project5,
         icon: WhatWeDo5, // Replace with actual icon
+        whatYouShouldKnow: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
     },
     {
         id: 6,
@@ -49,5 +54,6 @@ export const services = [
         description: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
         image: project5,
         icon: WhatWeDo6, // Replace with actual icon
+        whatYouShouldKnow: "You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.",
     },
 ];
