@@ -55,7 +55,7 @@ const HomeSlider: React.FC = () => {
       <Slider ref={sliderRef} {...settings}>
         {sliders.map((slider, index) => (
           <div key={index} className="relative h-screen">
-            <img src={slider.image} alt="" className="w-full h-screen object-cover brightness-50" />
+            <img src={slider.image} alt="" className="w-full h-screen object-cover brightness-[0.3]" />
             <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
               <div className="text-center">
                 <h3 className="text-7xl text-white font-semibold mb-2 leading-tight">{slider.text}</h3>
