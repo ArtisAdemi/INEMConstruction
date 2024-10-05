@@ -10,7 +10,7 @@ export const projects = [
         "slug": "project-1",
         "images": [project5, Construction1, Construction2],
         "category": "COMMERCIAL",
-        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing eratLorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing eratLorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing eratLorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing eratLorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
         "id": 2,

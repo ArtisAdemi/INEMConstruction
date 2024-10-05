@@ -41,16 +41,16 @@ export const Navbar: React.FC = () => {
         <img className="w-[40%] cursor-pointer" src="#" alt="logo image" onClick={() => redirect("/")} />
       </div>
       <div className="gap-x-10 items-center hidden xl:flex">
-        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/") ? "font-bold !text-[#FF9723]" : "text-white"}`} onClick={() => redirect("/")}>
+        <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/") ? "font-bold !text-[#439C91]" : "text-white"}`} onClick={() => redirect("/")}>
           Home
         </h2>
-        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/projects") ? "font-bold !text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/projects")}>
+        <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/projects") ? "font-bold !text-[#439C91]" : ""}`} onClick={() => redirect("/projects")}>
           Projects
         </h2>
-        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/services") ? "font-bold !text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/services")}>
+        <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/services") ? "font-bold !text-[#439C91]" : ""}`} onClick={() => redirect("/services")}>
           Services
         </h2>
-        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/about") ? "font-bold !text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/about")}>
+        <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/about") ? "font-bold !text-[#439C91]" : ""}`} onClick={() => redirect("/about")}>
           About Us
         </h2>
       </div>
