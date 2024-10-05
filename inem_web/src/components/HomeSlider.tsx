@@ -68,7 +68,7 @@ const HomeSlider: React.FC = () => {
           </div>
         ))}
       </Slider>
-      <div className="absolute inset-0 flex justify-between items-center z-40 pointer-events-none">
+      <div className="absolute inset-0 hidden xl:flex justify-between items-center z-40 pointer-events-none">
         <button className="button p-3 rounded-lg hover:scale-105 duration-300 bg-transparent text-white font-semibold pointer-events-auto" onClick={previous}>
           <img src={arrow} alt="" className="filter invert sepia saturate-100 hue-rotate-60 brightness-100 contrast-100" />
         </button>

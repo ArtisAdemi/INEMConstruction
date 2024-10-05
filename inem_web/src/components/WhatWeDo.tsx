@@ -9,19 +9,19 @@ import WhatWeDo6 from "../assets/decorations/WhatWeDo6.png";
 
 const WhatWeDo: React.FC = () => {
   return (
-    <div className="container mx-auto">
+    <div className="px-[8%] xl:px-[16%]">
       <h2 className="text-center text-gray-500 text-lg">WE ARE SPECIALISTS IN</h2>
       <h1 className="text-center text-4xl font-bold mb-12">WHAT WE DO</h1>
-      <div className="flex flex-wrap justify-center items-center">
-        <div className="w-full xl:w-1/3 p-4 flex flex-col justify-center items-center">
-          <div className="flex items-center w-full xl:w-1/3 p-4">
+      <div className="flex flex-wrap justify-between items-center">
+        <div className="w-full xl:w-1/3 flex flex-col justify-center items-start">
+          <div className="flex items-center w-full xl:w-1/3 xl:mb-6">
             <img src={WhatWeDo1} alt="Home Construction" className="w-12 h-12 mr-4" />
             <div>
               <h3 className="text-xl font-bold xl:w-[200px]">HOME CONSTRUCTION</h3>
               <p className="text-gray-600 xl:w-[200px]">Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
             </div>
           </div>
-          <div className="flex items-center w-full xl:w-1/3 p-4">
+          <div className="flex items-center w-full xl:w-1/3 xl:mb-6">
             <div className="flex items-center">
               <img src={WhatWeDo2} alt="Building Remodels" className="w-12 h-12 mr-4" />
               <div>
@@ -30,7 +30,7 @@ const WhatWeDo: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center w-full xl:w-1/3 p-4">
+          <div className="flex items-center w-full xl:w-1/3 xl:mb-6">
             <div className="flex items-center">
               <img src={WhatWeDo3} alt="Interior Design" className="w-12 h-12 mr-4" />
               <div>
@@ -43,7 +43,7 @@ const WhatWeDo: React.FC = () => {
         <div className="w-full hidden xl:flex xl:w-1/3 xl:px-4 xl:pt-4 justify-center items-center">
           <img src={WhatWeDoImage} alt="Worker" className="w-[80%] h-auto" />
         </div>
-        <div className="w-full xl:w-1/3 p-4 flex flex-col justify-center items-center">
+        <div className="w-full xl:w-1/3 p-4 flex flex-col justify-end items-end">
           <div className="w-full p-4">
             <div className="flex items-center w-full xl:p-4">
               <img src={WhatWeDo4} alt="Exterior Design" className="w-12 h-12 mr-4" />

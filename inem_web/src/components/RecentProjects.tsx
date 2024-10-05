@@ -11,10 +11,10 @@ const RecentProjects: React.FC = () => {
   };
 
   return (
-    <div className="text-center p-5 xl:px-[16%] bg-[#F9F9F9] py-16 xl:py-32 flex flex-col items-center">
+    <div className="text-center px-[8%] xl:px-[16%] bg-[#F9F9F9] py-16 xl:py-32 flex flex-col xl:items-center">
       <p className="text-sm text-gray-500">WORK OF EXCELLENCE</p>
       <h1 className="text-4xl mb-5">RECENT PROJECTS</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 mb-5 px-[8%] xl:px-[16%]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 mb-5 ">
         {projects.slice(0, 6).map((project, index) => (
           <div key={index} className="overflow-hidden relative group cursor-pointer">
             <img className="h-[250px] w-full xl:h-full object-cover transform transition-transform duration-300 group-hover:scale-110" src={project.images[0]} alt={`Project ${index + 1}`} />
@@ -29,7 +29,7 @@ const RecentProjects: React.FC = () => {
           </div>
         ))}
       </div>
-      <button className="bg-[#FF9723] hover:opacity-80 text-white py-2 px-4 rounded" onClick={() => redirect("/projects")}>
+      <button className="bg-[#FF9723] hover:opacity-80 text-white py-2 px-4 rounded mx-auto" onClick={() => redirect("/projects")}>
         VIEW ALL PROJECTS
       </button>
     </div>
