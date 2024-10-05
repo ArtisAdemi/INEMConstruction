@@ -36,26 +36,26 @@ export const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className={`navbar-wrapper w-full ${isAtTop ? "bg-[rgba(255,255,255,0)] text-white" : "bg-[rgba(255,255,255,1)]"} flex justify-between px-[8%] xl:px-[16%] py-4 transition-all duration-1000`}>
+    <div className={`navbar-wrapper w-full ${isAtTop ? "bg-[rgba(255,255,255,0)] text-white" : "bg-[#0E2442]"} flex justify-between px-[8%] xl:px-[16%] py-4 transition-all duration-1000`}>
       <div className="">
         <img className="w-[40%] cursor-pointer" src="#" alt="logo image" onClick={() => redirect("/")} />
       </div>
       <div className="gap-x-10 items-center hidden xl:flex">
-        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-black"} duration-300 ${isActive("/") ? "font-bold text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/")}>
+        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/") ? "font-bold !text-[#FF9723]" : "text-white"}`} onClick={() => redirect("/")}>
           Home
         </h2>
-        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-black"} duration-300 ${isActive("/projects") ? "font-bold text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/projects")}>
+        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/projects") ? "font-bold !text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/projects")}>
           Projects
         </h2>
-        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-black"} duration-300 ${isActive("/services") ? "font-bold text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/services")}>
+        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/services") ? "font-bold !text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/services")}>
           Services
         </h2>
-        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-black"} duration-300 ${isActive("/about") ? "font-bold text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/about")}>
+        <h2 className={`cursor-pointer hover:text-[#FF9723] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/about") ? "font-bold !text-[#FF9723]" : "text-black"}`} onClick={() => redirect("/about")}>
           About Us
         </h2>
       </div>
       <div className="items-center justify-center hidden xl:flex h-full">
-        <button className={`bg-[#FF9723] mt-3 h-1/2 rounded-md px-[20px] duration-300 py-[10px] text-[#FFFFFF] font-medium hover:cursor-pointer hover:opacity-80 transform hover:scale-105 ${isActive("/contact") ? "font-bold" : ""}`} onClick={() => redirect("/contact")}>
+        <button className={`bg-[#439C91] mt-3 h-1/2 rounded-md px-[20px] duration-300 py-[10px] text-[#FFFFFF] font-medium hover:cursor-pointer hover:opacity-80 transform hover:scale-105 ${isActive("/contact") ? "font-bold" : ""}`} onClick={() => redirect("/contact")}>
           Contact
         </button>
       </div>
