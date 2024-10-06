@@ -117,19 +117,19 @@ const Contact: React.FC = () => {
                     <h3 className='text-4xl font-bold mt-2'>FIND OUR LOCATION</h3>
                     <div className='flex flex-col lg:flex-row justify-center mt-8 space-y-2 lg:space-y-0 lg:space-x-16 w-full lg:w-[80%]'>
                         <div className='bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3'>
-                            <div className='text-yellow-500 text-2xl lg:text-4xl mb-4'>📍</div>
-                            <h4 className='lg:text-xl font-bold'>VISIT OUR OFFICE</h4>
-                            <p>9051 Constra Incorporate, USA</p>
+                            <div className='text-[#439C91] text-2xl lg:text-4xl mb-4'>📍</div>
+                            <h4 className='lg:text-xl text-[#439C91] font-bold'>VISIT OUR OFFICE</h4>
+                            <p className='text-[#439C91]'>9051 Constra Incorporate, USA</p>
                         </div>
                         <div className='bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3'>
-                            <div className='text-yellow-500 text-2xl lg:text-4xl mb-4'>📧</div>
-                            <h4 className='lg:text-xl font-bold'>EMAIL US</h4>
-                            <p>office@Constra.com</p>
+                            <div className='text-[#439C91] text-2xl lg:text-4xl mb-4'>📧</div>
+                            <h4 className='lg:text-xl text-[#439C91] font-bold'>EMAIL US</h4>
+                            <p className='text-[#439C91]'>office@Constra.com</p>
                         </div>
                         <div className='bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3'>
-                            <div className='text-yellow-500 text-2xl lg:text-4xl mb-4'>📞</div>
-                            <h4 className='lg:text-xl font-bold'>CALL US</h4>
-                            <p>(+9) 847-291-4353</p>
+                            <div className='text-[#439C91] text-2xl lg:text-4xl mb-4'>📞</div>
+                            <h4 className='lg:text-xl text-[#439C91] font-bold'>CALL US</h4>
+                            <p className='text-[#439C91]'>(+9) 847-291-4353</p>
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ const Contact: React.FC = () => {
                         {errors.message && <p className='text-red-500'>{errors.message}</p>}
                     </div>
                     <div className='text-right'>
-                        <button type='submit' className='bg-yellow-500 hover:bg-yellow-600 rounded-md text-white px-4 py-2 font-bold'>SEND MESSAGE</button>
+                        <button type='submit' className='bg-[#439C91] hover:opacity-80 rounded-md text-white px-4 py-2 font-bold'>SEND MESSAGE</button>
                     </div>
                 </form>
             </div>

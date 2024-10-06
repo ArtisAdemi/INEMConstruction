@@ -19,15 +19,15 @@ const Services: React.FC = () => {
                         <div key={service.id} className="overflow-hidden relative">
                             <img className="w-full h-48 object-cover" src={service.image} alt={service.title} />
                             <div className="p-4 flex">
-                                <div className="text-yellow-500 text-4xl mb-4 w-1/3"><img src={service.icon} className='w-2/3' alt="" /></div>
+                                <div className="text-[#439C91] text-4xl mb-4 w-1/3"><img src={service.icon} className='w-2/3' alt="" /></div>
                                 <div className='w-2/3'>
                                     <h2 className="text-xl font-bold mb-2">{service.title}</h2>
                                     <p className="text-gray-700 mb-4">{service.description}</p>
-                                    <a href={`/services/${service.slug}`} className="hover:text-yellow-500 font-semibold flex items-center justify-start gap-2 group">
+                                    <a href={`/services/${service.slug}`} className="hover:text-[#439C91] font-semibold flex items-center justify-start gap-2 group">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width={20} height={20} className="group-hover:fill-yellow-500">
                                             <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
                                         </svg>
-                                        <span className='group-hover:text-yellow-500'>LEARN MORE</span>
+                                        <span className='group-hover:text-[#439C91]'>LEARN MORE</span>
                                     </a>
                                 </div>
                             </div>

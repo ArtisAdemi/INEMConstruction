@@ -20,7 +20,7 @@ const CookieConsent: React.FC = () => {
     return (
         <div className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 text-center">
             <p>We use cookies to improve your experience on our site. By using our site, you consent to cookies.</p>
-            <button onClick={handleAccept} className="bg-yellow-500 text-white px-4 py-2 font-bold mt-2">
+            <button onClick={handleAccept} className="bg-[#439C91] text-white px-4 py-2 font-bold mt-2">
                 Accept
             </button>
         </div>
