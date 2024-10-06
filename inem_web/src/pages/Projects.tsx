@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
                                 </div>
                             </div>
                             <div className='flex justify-start'>
-                                <button className="bg-yellow-500 hover:bg-yellow-600 text-white text-start py-1 px-2 rounded mt-2 relative z-20" onClick={() => redirect(`/projects/${project.slug}`)}>VIEW PROJECT</button>
+                                <button className="bg-[#4a9a90] hover:bg-[#92d8d0] text-white text-start py-1 px-2 rounded mt-2 relative z-20" onClick={() => redirect(`/projects/${project.slug}`)}>VIEW PROJECT</button>
                             </div>
                         </div>
                     ))}

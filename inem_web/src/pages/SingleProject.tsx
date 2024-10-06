@@ -67,7 +67,7 @@ const SingleProject: React.FC = () => {
                     <div className="mb-4">
                         <strong>Categories:</strong> Commercial, Interiors
                     </div>
-                    <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contact Us</button>
+                    <button className="bg-[#439C91] hover:opacity-80 text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contact Us</button>
                 </div>
             </div>
         </div>
