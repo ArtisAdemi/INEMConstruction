@@ -24,9 +24,6 @@ const HomeAbout: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-6">
-        <button className="text-lg py-3 px-8 mt-5 border-[#439C91] border-[1px] hover:duration-500 duration-500 hover:text-[#439C91] z-30 relative" onClick={() => redirect("/about")}>notre histoire</button>
-      </div>
     </div>
   );
 };
