@@ -13,7 +13,7 @@ const RecentProjects: React.FC = () => {
   return (
     <div className="text-center p-5 lg:px-[16%] bg-[#F9F9F9] flex flex-col items-center pb-10">
       <p className="text-sm text-gray-500 mt-10">WORK OF EXCELLENCE</p>
-      <h1 className="text-4xl mb-5">RECENT PROJECTS</h1>
+      <h1 className="text-4xl mb-5">Projets récents</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 mb-5 lg:w-[80%]">
         {projects.slice(0, 6).map((project, index) => (
           <div key={index} className="overflow-hidden relative group cursor-pointer">
@@ -22,7 +22,7 @@ const RecentProjects: React.FC = () => {
               <div className="flex flex-col absolute bottom-5 left-5">
                 <h2 className="text-white text-xl font-semibold pb-3">{project.title}</h2>
                 <button className="bg-[#4a9a90] hover:bg-[#92d8d0] text-white py-1 px-2 rounded" onClick={() => redirect(`/projects/${project.slug}`)}>
-                  VIEW PROJECT
+                  En savoir plus
                 </button>
               </div>
             </div>
@@ -30,7 +30,7 @@ const RecentProjects: React.FC = () => {
         ))}
       </div>
       <button className="bg-[#4a9a90] hover:bg-[#92d8d0] text-white py-2 px-4 rounded" onClick={() => redirect("/projects")}>
-        VIEW ALL PROJECTS
+        Voir tous les projets
       </button>
     </div>
   );
