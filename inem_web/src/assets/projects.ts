@@ -9,7 +9,11 @@ export const projects = [
         "title": "PROJECT 1",
         "slug": "project-1",
         "images": [project5, Construction1, Construction2],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing eratLorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing eratLorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing eratLorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing eratLorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -17,7 +21,11 @@ export const projects = [
         "title": "PROJECT 2",
         "slug": "project-2",
         "images": [Construction3, Construction1, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -25,7 +33,11 @@ export const projects = [
         "title": "PROJECT 3",
         "slug": "project-3",
         "images": [project5, Construction2, Construction1],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -33,7 +45,11 @@ export const projects = [
         "title": "PROJECT 4",
         "slug": "project-4",
         "images": [Construction3, project5, Construction2],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -41,7 +57,11 @@ export const projects = [
         "title": "PROJECT 5",
         "slug": "project-5",
         "images": [project5, Construction2, Construction3],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -49,7 +69,11 @@ export const projects = [
         "title": "PROJECT 6",
         "slug": "project-6",
         "images": [Construction1, Construction3, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -57,7 +81,11 @@ export const projects = [
         "title": "PROJECT 7",
         "slug": "project-7",
         "images": [project5, project5, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -65,7 +93,11 @@ export const projects = [
         "title": "PROJECT 8",
         "slug": "project-8",
         "images": [project5, project5, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -73,7 +105,11 @@ export const projects = [
         "title": "PROJECT 9",
         "slug": "project-9",
         "images": [project5, project5, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -81,7 +117,11 @@ export const projects = [
         "title": "PROJECT 10",
         "slug": "project-10",
         "images": [project5, project5, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -89,7 +129,11 @@ export const projects = [
         "title": "PROJECT 11",
         "slug": "project-11",
         "images": [project5, project5, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -97,7 +141,11 @@ export const projects = [
         "title": "PROJECT 12",
         "slug": "project-12",
         "images": [project5, project5, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -105,7 +153,11 @@ export const projects = [
         "title": "PROJECT 13",
         "slug": "project-13",
         "images": [project5, project5, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
     {
@@ -113,7 +165,11 @@ export const projects = [
         "title": "PROJECT 14",
         "slug": "project-14",
         "images": [project5, project5, project5],
-        "category": "COMMERCIAL",
+        "services": ["Construction", "Renovation", "Maintenance"],
+        "client": "Pransbay Powers Authority",
+        "location": "McLean, VA",
+        "size": "65,000 SF",
+        "year": "2015",
         "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat"
     },
 ];

@@ -105,16 +105,12 @@ const Contact: React.FC = () => {
                 <img src={project5} alt="Contact" className='w-full h-full object-cover' />
                 <div className='absolute inset-0 bg-black opacity-50'></div> {/* Semi-transparent overlay */}
                 <div className='absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2'>
-                    <h1 className='text-4xl font-bold'>CONTACT</h1>
-                    <div className='mt-2'>
-                        <span>HOME</span> / <span>COMPANY</span> / <span>CONTACT US</span>
-                    </div>
+                    <h1 className='text-4xl font-bold'>Contacte</h1>
                 </div>
             </div>
             <div className='text-center py-12 px-[16%]'>
                 <div className='flex flex-col items-center'>
-                    <h2 className='text-2xl font-bold'>REACHING OUR OFFICE</h2>
-                    <h3 className='text-4xl font-bold mt-2'>FIND OUR LOCATION</h3>
+                    <h2 className=''>Que vous ayez un projet de grande envergure ou une idée qui nécessite une touche de maçonnerie artistique, nous sommes là pour vous. Contactez nous pour discuter de vos besoins, demander un devis ou simplement en savoir plus sur notre entreprise de maçonnerie de qualité.</h2>
                     <div className='flex flex-col lg:flex-row justify-center mt-8 space-y-2 lg:space-y-0 lg:space-x-16 w-full lg:w-[80%]'>
                         <div className='bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3'>
                             <div className='text-[#439C91] text-2xl lg:text-4xl mb-4'>📍</div>
@@ -139,14 +135,14 @@ const Contact: React.FC = () => {
                 </div>
             </div>
             <div className='mt-8 px-[16%]'>
-                <h2 className='text-2xl font-bold'>WE LOVE TO HEAR</h2>
+                <h2 className='text-2xl font-bold'>Contactez nous</h2>
                 <form className='mt-4 space-y-4 py-6' onSubmit={handleSubmit}>
                     <div className='flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:!space-x-4'>
                         <div className='w-full lg:w-1/3'>
                             <input
                                 type='text'
                                 name='name'
-                                placeholder='Name'
+                                placeholder='Nom'
                                 className='w-full bg-transparent p-2 border border-gray-300'
                                 value={formData.name}
                                 onChange={handleChange}
@@ -170,7 +166,7 @@ const Contact: React.FC = () => {
                             <input
                                 type='text'
                                 name='subject'
-                                placeholder='Subject'
+                                placeholder='Objet'
                                 className='w-full p-2 border border-gray-300'
                                 value={formData.subject}
                                 onChange={handleChange}
@@ -190,7 +186,7 @@ const Contact: React.FC = () => {
                         {errors.message && <p className='text-red-500'>{errors.message}</p>}
                     </div>
                     <div className='text-right'>
-                        <button type='submit' className='bg-[#439C91] hover:opacity-80 rounded-md text-white px-4 py-2 font-bold'>SEND MESSAGE</button>
+                        <button type='submit' className='bg-[#439C91] hover:opacity-80 rounded-md text-white px-4 py-2 font-bold'>Envoyez votre message</button>
                     </div>
                 </form>
             </div>

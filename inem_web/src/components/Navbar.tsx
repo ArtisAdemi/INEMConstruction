@@ -46,18 +46,18 @@ export const Navbar: React.FC = () => {
           Home
         </h2>
         <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/projects") ? "font-bold !text-[#439C91]" : ""}`} onClick={() => redirect("/projects")}>
-          Projects
+          Nos réalisations
         </h2>
         <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/services") ? "font-bold !text-[#439C91]" : ""}`} onClick={() => redirect("/services")}>
           Services
         </h2>
         <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/about") ? "font-bold !text-[#439C91]" : ""}`} onClick={() => redirect("/about")}>
-          About Us
+          Notre histoire
         </h2>
       </div>
       <div className="items-center justify-center hidden mb-3 xl:flex h-full">
         <button className={`bg-[#439C91] mt-3 h-1/2 rounded-md px-[20px] duration-300 py-[10px] text-[#FFFFFF] font-medium hover:cursor-pointer hover:opacity-80 transform hover:scale-105 ${isActive("/contact") ? "font-bold" : ""}`} onClick={() => redirect("/contact")}>
-          Contact
+          Contacte
         </button>
       </div>
       <div className="xl:hidden flex items-center">
@@ -88,7 +88,7 @@ export const Navbar: React.FC = () => {
           </h2>
           <h2 className={`cursor-pointer hover:duration-300 font-medium text-lg duration-300 ${isActive("/projects") ? "font-bold underline" : ""}`} onClick={() => redirect("/projects")}>
             {isActive("/projects") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
-            Projects
+            Nos réalisations
           </h2>
           <h2 className={`cursor-pointer  hover:duration-300 font-medium text-lg duration-300 ${isActive("/services") ? "font-bold underline" : ""}`} onClick={() => redirect("/services")}>
             {isActive("/services") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
@@ -96,11 +96,11 @@ export const Navbar: React.FC = () => {
           </h2>
           <h2 className={`cursor-pointer hover hover:duration-300 font-medium text-lg duration-300 ${isActive("/about") ? "font-bold underline" : ""}`} onClick={() => redirect("/about")}>
             {isActive("/about") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
-            About Us
+            Notre histoire
           </h2>
           <h2 className={`cursor-pointer hover hover:duration-300 font-medium text-lg duration-300 ${isActive("/contact") ? "font-bold underline" : ""}`} onClick={() => redirect("/contact")}>
             {isActive("/contact") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
-            Contact
+            Contacte
           </h2>
         </div>
       </div>
