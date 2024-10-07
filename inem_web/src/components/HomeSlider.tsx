@@ -62,14 +62,13 @@ const HomeSlider: React.FC = () => {
                 {/* <p className="text-white mb-4">{slider.text}</p> */}
               </div>
               <div className="flex align-bottom items-end">
-                <button className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:border-[#439C91] hover:duration-500 duration-500 hover:text-[#439C91] z-30 relative">
-                  En savoir plus</button>
+                <button className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:border-[#439C91] hover:duration-500 duration-500 hover:text-[#439C91] z-30 relative">En savoir plus</button>
               </div>
             </div>
           </div>
         ))}
       </Slider>
-      <div className="absolute inset-0 flex justify-between items-center z-40 pointer-events-none">
+      <div className="absolute inset-0 hidden xl:flex justify-between items-center z-40 pointer-events-none">
         <button className="button p-3 rounded-lg hover:scale-105 duration-300 bg-transparent text-white font-semibold pointer-events-auto" onClick={previous}>
           <img src={arrow} alt="" className="" />
         </button>

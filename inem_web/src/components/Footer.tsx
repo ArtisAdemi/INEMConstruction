@@ -17,13 +17,13 @@ export const Footer: React.FC = () => {
   return (
     <div className="footer-wrapper px-[8%] xl:px-[16%] bg-[#0E2442] flex flex-col justify-between">
       <div className="justify-between xl:flex gap-3 py-[125px] border-b border-[#999999]">
-        <div className="md:w-[30%] w-full">
+        <div className="lg:w-[30%] w-full">
           <div className="mb-5 items-end">
             <img className="w-64 cursor-pointer" src={logo} alt="logo image" onClick={() => redirect("/")} />
           </div>
           <p className="text-[#999999] mb-8">We build readymade websites, mobile applications, and elaborate online business services</p>
         </div>
-        <div className="md:w-[30%] w-full">
+        <div className="lg:w-[30%] w-full">
           <div className="mb-5 items-end">
             <h2 className="text-white font-semibold mb-3">WORKING HOURS</h2>
             <p className="text-[#999999]">We work 7 days a week, every day excluding major holidays. Contact us if you have an emergency, with our Hotline and Contact form.</p>
