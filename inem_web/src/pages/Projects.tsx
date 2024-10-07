@@ -12,17 +12,17 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="container">
-      <div className="h-[300px] relative w-screen">
+    <div className="">
+      <div className="h-[300px] relative">
         <img src={project5} alt="Contact" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Semi-transparent overlay */}
         <div className="absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2">
           <h1 className="text-2xl font-bold">Nos réalisations</h1>
         </div>
       </div>
-      <div className="text-center p-6 lg:px-[16%] bg-[#F9F9F9] w-screen flex flex-col items-center">
+      <div className="text-center p-6 px-[8%] xl:px-[16%] bg-[#F9F9F9] flex flex-col items-center">
         <h1 className="text-4xl font-bold text-center mb-8 pt-10">Our Featured Projects</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
           {projects.map((project) => (
             <div key={project.id} className="">
               <div className="overflow-hidden relative group cursor-pointer">

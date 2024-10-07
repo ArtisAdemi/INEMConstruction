@@ -37,9 +37,9 @@ export const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className={`navbar-wrapper w-full items-center ${isAtTop ? "bg-[rgba(255,255,255,0)] text-white" : "bg-[#0E2442] text-white"} flex justify-between px-[8%] pl-[3%] xl:px-[16%] xl:pl-[13%] py-4 transition-all duration-1000`}>
+    <div className={`navbar-wrapper w-full items-center ${isAtTop ? "bg-[rgba(255,255,255,0)] text-white" : "bg-[#0E2442] text-white"} flex justify-between px-[8%] pl-[3%] xl:px-[16%] xl:pl-[13%] transition-all duration-1000`}>
       <div className="w-[40%] xl:w-auto">
-        <img className="w-64 cursor-pointer" src={logo} alt="logo image" onClick={() => redirect("/")} />
+        <img className="w-64 h-32 cursor-pointer" src={logo} alt="logo image" onClick={() => redirect("/")} />
       </div>
       <div className="gap-x-10 items-center hidden xl:flex">
         <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/") ? "font-bold !text-[#439C91]" : "text-white"}`} onClick={() => redirect("/")}>

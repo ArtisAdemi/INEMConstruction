@@ -1,7 +1,15 @@
 import React from "react";
 import Construction from "../assets/Construction.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const HomeAbout: React.FC = () => {
+  const navigate = useNavigate();
+
+  const redirect = (path: string) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(path);
+  };
+
   return (
     <div className="my-48 px-[8%] xl:px-[16%] ">
       <div className="xl:flex justify-between gap-x-6 ">
@@ -11,10 +19,10 @@ const HomeAbout: React.FC = () => {
         </div>
         <div className="xl:w-[60%] mt-8 xl:mt-0">
           <img src={Construction} alt="" />
+          <button className="text-lg py-3 px-8 mt-5 border-[#439C91] hover:bg-[#439C91] border-[1px] hover:duration-500 duration-500 hover:text-[#FFF] z-30 relative" onClick={() => redirect("/about")}>
+            Notre Histoire
+          </button>
         </div>
-      </div>
-      <div className="flex justify-center items-center mt-6">
-        <button className="text-lg py-3 px-8 mt-5 border-[#439C91] border-[1px] hover:duration-500 duration-500 hover:text-[#439C91] z-30 relative">notre histoire</button>
       </div>
     </div>
   );
