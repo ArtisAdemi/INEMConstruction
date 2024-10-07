@@ -50,24 +50,21 @@ const SingleProject: React.FC = () => {
                     <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
                     <p className="text-gray-700 mb-4">{project.description}</p>
                     <div className="mb-4">
-                        <strong>Client:</strong> Pransbay Powers Authority
+                        <strong>Client:</strong> {project.client}
                     </div>
                     <div className="mb-4">
-                        <strong>Architect:</strong> Diarke Pelli Incorp
+                        <strong>Location:</strong> {project.location}
                     </div>
                     <div className="mb-4">
-                        <strong>Location:</strong> McLean, VA
+                        <strong>Size:</strong> {project.size}
                     </div>
                     <div className="mb-4">
-                        <strong>Size:</strong> 65,000 SF
+                        <strong>Year Completed:</strong> {project.year}
                     </div>
                     <div className="mb-4">
-                        <strong>Year Completed:</strong> 2015
+                        <strong>Categories:</strong> {project.services.join(', ')}
                     </div>
-                    <div className="mb-4">
-                        <strong>Categories:</strong> Commercial, Interiors
-                    </div>
-                    <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contact Us</button>
+                    <button className="bg-[#439C91] hover:opacity-80 text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contact Us</button>
                 </div>
             </div>
         </div>

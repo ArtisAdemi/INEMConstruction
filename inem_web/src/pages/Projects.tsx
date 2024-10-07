@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
         <img src={project5} alt="Contact" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Semi-transparent overlay */}
         <div className="absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2">
-          <h1 className="text-2xl font-bold">Projects</h1>
+          <h1 className="text-2xl font-bold">Nos réalisations</h1>
         </div>
       </div>
       <div className="text-center p-6 lg:px-[16%] bg-[#F9F9F9] w-screen flex flex-col items-center">
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
                 </div>
               </div>
               <div className="flex justify-start">
-                <button className="bg-yellow-500 hover:bg-yellow-600 text-white text-start py-1 px-2 rounded mt-2 relative z-20" onClick={() => redirect(`/projects/${project.slug}`)}>
+                <button className="bg-[#4a9a90] hover:bg-[#92d8d0] text-white text-start py-1 px-2 rounded mt-2 relative z-20" onClick={() => redirect(`/projects/${project.slug}`)}>
                   VIEW PROJECT
                 </button>
               </div>

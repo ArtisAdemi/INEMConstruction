@@ -105,31 +105,27 @@ const Contact: React.FC = () => {
         <img src={project5} alt="Contact" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Semi-transparent overlay */}
         <div className="absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2">
-          <h1 className="text-4xl font-bold">CONTACT</h1>
-          <div className="mt-2">
-            <span>HOME</span> / <span>COMPANY</span> / <span>CONTACT US</span>
-          </div>
+          <h1 className="text-4xl font-bold">Contacte</h1>
         </div>
       </div>
-      <div className="text-center py-12 px-[8%] xl:px-[16%]">
+      <div className="text-center py-12 px-[16%]">
         <div className="flex flex-col items-center">
-          <h2 className="text-2xl font-bold">REACHING OUR OFFICE</h2>
-          <h3 className="text-4xl font-bold mt-2">FIND OUR LOCATION</h3>
+          <h2 className="">Que vous ayez un projet de grande envergure ou une idée qui nécessite une touche de maçonnerie artistique, nous sommes là pour vous. Contactez nous pour discuter de vos besoins, demander un devis ou simplement en savoir plus sur notre entreprise de maçonnerie de qualité.</h2>
           <div className="flex flex-col lg:flex-row justify-center mt-8 space-y-2 lg:space-y-0 lg:space-x-16 w-full lg:w-[80%]">
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
-              <div className="text-yellow-500 text-2xl lg:text-4xl mb-4">📍</div>
-              <h4 className="lg:text-xl font-bold">VISIT OUR OFFICE</h4>
-              <p>9051 Constra Incorporate, USA</p>
+              <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📍</div>
+              <h4 className="lg:text-xl text-[#439C91] font-bold">VISIT OUR OFFICE</h4>
+              <p className="text-[#439C91]">9051 Constra Incorporate, USA</p>
             </div>
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
-              <div className="text-yellow-500 text-2xl lg:text-4xl mb-4">📧</div>
-              <h4 className="lg:text-xl font-bold">EMAIL US</h4>
-              <p>office@Constra.com</p>
+              <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📧</div>
+              <h4 className="lg:text-xl text-[#439C91] font-bold">EMAIL US</h4>
+              <p className="text-[#439C91]">office@Constra.com</p>
             </div>
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
-              <div className="text-yellow-500 text-2xl lg:text-4xl mb-4">📞</div>
-              <h4 className="lg:text-xl font-bold">CALL US</h4>
-              <p>(+9) 847-291-4353</p>
+              <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📞</div>
+              <h4 className="lg:text-xl text-[#439C91] font-bold">CALL US</h4>
+              <p className="text-[#439C91]">(+9) 847-291-4353</p>
             </div>
           </div>
         </div>
@@ -137,12 +133,12 @@ const Contact: React.FC = () => {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11810.725693658163!2d21.10579587308559!3d42.26397536913569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354781ff1754e19%3A0xcf247a1d041c6277!2z0JHRgNC-0LQ!5e0!3m2!1sfr!2sfr!4v1727707893938!5m2!1sfr!2sfr" className="w-full h-[400px]" loading="lazy"></iframe>
         </div>
       </div>
-      <div className="mt-8 px-[8%] xl:px-[16%]">
-        <h2 className="text-2xl font-bold">WE LOVE TO HEAR</h2>
+      <div className="mt-8 px-[16%]">
+        <h2 className="text-2xl font-bold">Contactez nous</h2>
         <form className="mt-4 space-y-4 py-6" onSubmit={handleSubmit}>
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:!space-x-4">
             <div className="w-full lg:w-1/3">
-              <input type="text" name="name" placeholder="Name" className="w-full bg-transparent p-2 border border-gray-300" value={formData.name} onChange={handleChange} autoComplete="off" />
+              <input type="text" name="name" placeholder="Nom" className="w-full bg-transparent p-2 border border-gray-300" value={formData.name} onChange={handleChange} autoComplete="off" />
               {errors.name && <p className="text-red-500">{errors.name}</p>}
             </div>
             <div className="w-full lg:w-1/3">
@@ -150,7 +146,7 @@ const Contact: React.FC = () => {
               {errors.email && <p className="text-red-500">{errors.email}</p>}
             </div>
             <div className="w-full lg:w-1/3">
-              <input type="text" name="subject" placeholder="Subject" className="w-full p-2 border border-gray-300" value={formData.subject} onChange={handleChange} />
+              <input type="text" name="subject" placeholder="Objet" className="w-full p-2 border border-gray-300" value={formData.subject} onChange={handleChange} />
               {errors.subject && <p className="text-red-500">{errors.subject}</p>}
             </div>
           </div>
@@ -159,8 +155,8 @@ const Contact: React.FC = () => {
             {errors.message && <p className="text-red-500">{errors.message}</p>}
           </div>
           <div className="text-right">
-            <button type="submit" className="bg-yellow-500 hover:bg-yellow-600 rounded-md text-white px-4 py-2 font-bold">
-              SEND MESSAGE
+            <button type="submit" className="bg-[#439C91] hover:opacity-80 rounded-md text-white px-4 py-2 font-bold">
+              Envoyez votre message
             </button>
           </div>
         </form>

@@ -34,19 +34,19 @@ const HomeSlider: React.FC = () => {
   const sliders = [
     {
       image: twoworkers,
-      text: "First Construction Text",
+      text: "une qualité irréprochable pour votre plus grande satisfaction",
     },
     {
       image: Construction,
-      text: "First Construction Text",
+      text: "réactivité pour planifier vos projets dans les délais",
     },
     {
       image: Construction2,
-      text: "Second Construction Text",
+      text: "Une transparence avec un excellent rapport qualité prix",
     },
     {
       image: Construction3,
-      text: "Third Construction Text",
+      text: "Licences, certifications et assurances pour votre confort",
     },
   ];
 
@@ -55,14 +55,14 @@ const HomeSlider: React.FC = () => {
       <Slider ref={sliderRef} {...settings}>
         {sliders.map((slider, index) => (
           <div key={index} className="relative h-screen">
-            <img src={slider.image} alt="" className="w-full h-screen object-cover brightness-50" />
+            <img src={slider.image} alt="" className="w-full h-screen object-cover brightness-[0.3]" />
             <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
               <div className="text-center">
-                <h3 className="text-3xl xl:text-7xl text-white font-semibold mb-2 leading-tight">{slider.text}</h3>
-                <p className="text-white mb-4">{slider.text}</p>
+                <h3 className="text-4xl text-white font-semibold mb-2 leading-tight">{slider.text}</h3>
+                {/* <p className="text-white mb-4">{slider.text}</p> */}
               </div>
               <div className="flex align-bottom items-end">
-                <button className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:bg-white hover:duration-500 duration-500 hover:text-[#ff7404] z-30 relative">Learn More</button>
+                <button className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:border-[#439C91] hover:duration-500 duration-500 hover:text-[#439C91] z-30 relative">En savoir plus</button>
               </div>
             </div>
           </div>
@@ -70,10 +70,10 @@ const HomeSlider: React.FC = () => {
       </Slider>
       <div className="absolute inset-0 hidden xl:flex justify-between items-center z-40 pointer-events-none">
         <button className="button p-3 rounded-lg hover:scale-105 duration-300 bg-transparent text-white font-semibold pointer-events-auto" onClick={previous}>
-          <img src={arrow} alt="" className="filter invert sepia saturate-100 hue-rotate-60 brightness-100 contrast-100" />
+          <img src={arrow} alt="" className="" />
         </button>
         <button className="button !p-3 rounded-lg hover:scale-105 duration-300 bg-transparent text-white font-semibold pointer-events-auto" onClick={next}>
-          <img src={arrow} alt="" className="rotate-180 filter invert sepia saturate-100 hue-rotate-60 brightness-100 contrast-100" />
+          <img src={arrow} alt="" className="rotate-180" />
         </button>
       </div>
     </div>
