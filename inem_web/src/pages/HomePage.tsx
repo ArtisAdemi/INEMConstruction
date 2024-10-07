@@ -3,6 +3,7 @@ import HomeSlider from "../components/HomeSlider";
 import WhatWeDo from "../components/WhatWeDo";
 import HomeAbout from "../components/HomeAbout";
 import RecentProjects from "../components/RecentProjects";
+import HappyClients from "../components/HappyClients";
 
 const HomePage: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage: React.FC = () => {
       <HomeSlider />
       <HomeAbout />
       <WhatWeDo />
+      <HappyClients />
       <RecentProjects />
     </div>
   );
