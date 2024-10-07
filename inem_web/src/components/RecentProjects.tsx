@@ -11,9 +11,9 @@ const RecentProjects: React.FC = () => {
   };
 
   return (
-    <div className="text-center p-5 lg:px-[16%] bg-[#F9F9F9] flex flex-col items-center pb-10">
-      <p className="text-sm text-gray-500 mt-10">WORK OF EXCELLENCE</p>
-      <h1 className="text-4xl mb-5">Projets récents</h1>
+    <div className="text-center p-5 lg:px-[16%] bg-[#F6F8F7] flex flex-col items-center pb-10">
+      <p className="text-sm text-black mt-10">WORK OF EXCELLENCE</p>
+      <h1 className="text-4xl text-black mb-5">Projets récents</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 mb-5 lg:w-[80%]">
         {projects.slice(0, 6).map((project, index) => (
           <div key={index} className="overflow-hidden relative group cursor-pointer">

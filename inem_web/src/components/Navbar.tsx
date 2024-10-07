@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
           Nos réalisations
         </h2>
         <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/services") ? "font-bold !text-[#439C91]" : ""}`} onClick={() => redirect("/services")}>
-          Services
+          Nos prestations
         </h2>
         <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/about") ? "font-bold !text-[#439C91]" : ""}`} onClick={() => redirect("/about")}>
           Notre histoire

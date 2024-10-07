@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className="footer-wrapper px-[8%] xl:px-[16%] bg-[#0d0d0d] flex flex-col justify-between">
+    <div className="footer-wrapper px-[8%] xl:px-[16%] bg-[#0E2442] flex flex-col justify-between">
       <div className="justify-between xl:flex gap-3 py-[125px] border-b border-[#999999]">
         <div className="md:w-[30%] w-full">
           <div className="mb-5 items-end">
