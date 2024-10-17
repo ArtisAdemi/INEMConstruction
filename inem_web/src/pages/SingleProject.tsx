@@ -28,15 +28,15 @@ const SingleProject: React.FC = () => {
     }
 
     return (
-        <div className="container w-screen">
-            <div className='h-[300px] relative w-screen'>
+        <div className="">
+            <div className='h-[300px] relative'>
                 <img src={images ? images[0] : ''} alt="Contact" className='w-full h-full object-cover' />
                 <div className='absolute inset-0 bg-black opacity-50'></div> {/* Semi-transparent overlay */}
                 <div className='absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2'>
                     <h1 className='text-2xl font-bold'>Projets</h1>
                 </div>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 w-screen gap-8 py-12 px-[8%] xl:px-[16%]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-12 px-[8%] xl:px-[16%]">
                 <div className="relative">
                     <div className="carousel">
                         <div className="carousel-inner relative overflow-hidden w-full">
@@ -64,7 +64,7 @@ const SingleProject: React.FC = () => {
                     <div className="mb-4">
                         <strong>Catégories:</strong> {project.services.join(', ')}
                     </div>
-                    <button className="bg-[#439C91] hover:opacity-80 text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contacte</button>
+                    <button className="bg-[#439C91] hover:opacity-80 w-full lg:w-fit text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contacte</button>
                 </div>
             </div>
         </div>
