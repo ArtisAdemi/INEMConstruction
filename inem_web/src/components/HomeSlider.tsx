@@ -7,8 +7,17 @@ import Construction from "../assets/Construction.jpeg";
 import Construction2 from "../assets/Construction2.jpeg";
 import Construction3 from "../assets/Construction3.jpeg";
 import arrow from "../assets/decorations/ArrowLeft.svg";
+import { useNavigate } from "react-router-dom";
 
 const HomeSlider: React.FC = () => {
+
+  const navigate = useNavigate();
+
+  const redirect = (path: string) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(path);
+  };
+
   const sliderRef = useRef<Slider | null>(null);
   const next = () => {
     if (sliderRef.current) {
@@ -34,11 +43,11 @@ const HomeSlider: React.FC = () => {
   const sliders = [
     {
       image: twoworkers,
-      text: "une qualité irréprochable pour votre plus grande satisfaction",
+      text: "Une qualité irréprochable pour votre plus grande satisfaction",
     },
     {
       image: Construction,
-      text: "réactivité pour planifier vos projets dans les délais",
+      text: "Réactivité pour planifier vos projets dans les délais",
     },
     {
       image: Construction2,
@@ -62,7 +71,7 @@ const HomeSlider: React.FC = () => {
                 {/* <p className="text-white mb-4">{slider.text}</p> */}
               </div>
               <div className="flex align-bottom items-end">
-                <button className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:border-[#439C91] hover:duration-500 duration-500 hover:text-[#439C91] z-30 relative">En savoir plus</button>
+                <button onClick={() => redirect("/about")} className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:border-[#439C91] hover:duration-500 duration-500 hover:text-[#439C91] z-30 relative">En savoir plus</button>
               </div>
             </div>
           </div>

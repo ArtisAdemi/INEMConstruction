@@ -2,6 +2,7 @@ import React from 'react';
 import image from "../assets/jason-briscoe-sfze-8LfCXI-unsplash.jpg"
 
 
+
 const services = [
     { title: 'Expertise inégalée', description: 'Nos maçons sont des artisans chevronnés qui maîtrisent l\'art de la maçonnerie. Leur expérience et leur savoir-faire garantissent des résultats exceptionnels.' },
     { title: 'Transparence totale', description: 'Nous établissons des contrats détaillés pour chaque projet, clarifiant les coûts, les délais et les matériaux utilisés. La transparence est au cœur de notre approche.' },
@@ -14,29 +15,11 @@ const services = [
 
 const WhyUs: React.FC = () => {
     return (
-        // <div className="bg-[#162934] text-white py-16">
-        //     <h2 className="text-center text-4xl font-bold mb-12">Pourquoi nous choisir ?</h2>
-        //     <h2 className="text-center text-3xl font-semibold mb-12 px-[8%] xl:px-[16%]">Lorsque vous choisissez Inem Construction, vous faites le choix de l'excellence. Voici quelques
-        //         raisons pour lesquelles nos clients nous font confiance</h2>
-        //     <div className="xl:px-[16%] px-[8%]">
-        //         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
-        //             {services.map((service, index) => (
-        //                 <div
-        //                     key={index}
-        //                     className={`p-6 rounded-lg shadow-lg h-[250px] flex flex-col items-start`}
-        //                 >
 
-        //                     <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-        //                     {service.description && <p>{service.description}</p>}
-        //                 </div>
-        //             ))}
-        //         </div>
-        //     </div>
-        // </div>
-        <div className="relative h-[1500px] sm:h-[1200px] md:h-[1000px] xl:h-[800px]">
-            <img src={image} alt="" className="w-full h-[1500px] sm:h-[1200px] md:h-[1000px]  xl:h-[800px] object-cover brightness-[0.3]" />
+        <div className="relative h-[1750px] sm:h-[1400px] md:h-[1300px] xl:h-[900px]">
+            <img src={image} alt="" className="w-full h-full object-cover brightness-[0.3]" />
             <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
-                <div className='flex flex-col justify-center xl:text-center pb-10 xl:pb-24 px-[8%] xl:px-[16%]'>
+                <div className='flex flex-col justify-center xl:text-center pb-10 xl:pb-8 px-[8%] xl:px-[16%]'>
                     <h1 className='text-white font-bold text-3xl sm:text-center xl:text-4xl mb-3'>Pourquoi nous choisir ?</h1>
                     <p className='text-white md:text-center'>Lorsque vous choisissez Inem Construction, vous faites le choix de l'excellence. Voici quelques
                         raisons pour lesquelles nos clients nous font confiance</p>
@@ -45,9 +28,8 @@ const WhyUs: React.FC = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className={`flex flex-col items-start justify-center`}
+                            className={`flex flex-col items-start border border-white p-4  rounded-lg justify-center`}
                         >
-
                             <h3 className="text-xl text-white font-bold mb-2">{service.title}</h3>
                             {service.description && <p className='text-white'>{service.description}</p>}
                         </div>

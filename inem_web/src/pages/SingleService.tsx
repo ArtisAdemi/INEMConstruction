@@ -17,7 +17,7 @@ const SingleService: React.FC = () => {
                 <img src={project5} alt="Contact" className='w-full h-full object-cover' />
                 <div className='absolute inset-0 bg-black opacity-50'></div> {/* Semi-transparent overlay */}
                 <div className='absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2'>
-                    <h1 className='text-2xl font-bold'>Services</h1>
+                    <h1 className='text-2xl font-bold'>Nos prestations</h1>
                 </div>
             </div>
             <div className="flex flex-col items-center mx-auto w-screen px-4 lg:px-[16%] py-12">
@@ -36,7 +36,7 @@ const SingleService: React.FC = () => {
                     </div>
                 </div>
                 <div className='py-12'>
-                    <h1 className='text-4xl font-bold mb-4'>What you should know</h1>
+                    <h1 className='text-4xl font-bold mb-4'>Ce que vous devez savoir</h1>
                     <p className='text-gray-700 mb-8'>
                         {service.whatYouShouldKnow}
                     </p>

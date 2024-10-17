@@ -45,19 +45,19 @@ export const Footer: React.FC = () => {
         <div className="xl:flex gap-3 justify-center md:w-[30%] w-full mt-12 xl:mt-4">
           <div className="flex flex-col gap-y-2">
             <h2 className={`cursor-pointer hover:text-[#439C91] duration-300 ${isActive("/") ? "font-bold text-[#439C91]" : "text-[#999999]"}`} onClick={() => redirect("/")}>
-              {isActive("/") ? "- Home" : "Home"}
+              {isActive("/") ? "- D'accueil" : "D'accueil"}
             </h2>
             <h2 className={`cursor-pointer hover:text-[#439C91] duration-300 ${isActive("/projects") ? "font-bold text-[#439C91]" : "text-[#999999]"}`} onClick={() => redirect("/projects")}>
-              {isActive("/projects") ? "- Projects" : "Projects"}
+              {isActive("/projects") ? "- Nos réalisations" : "Nos réalisations"}
             </h2>
             <h2 className={`cursor-pointer hover:text-[#439C91] duration-300 ${isActive("/services") ? "font-bold text-[#439C91]" : "text-[#999999]"}`} onClick={() => redirect("/services")}>
               {isActive("/services") ? "- Services" : "Services"}
             </h2>
             <h2 className={`cursor-pointer hover:text-[#439C91] duration-300 ${isActive("/about") ? "font-bold text-[#439C91]" : "text-[#999999]"}`} onClick={() => redirect("/about")}>
-              {isActive("/about") ? "- About Us" : "About Us"}
+              {isActive("/about") ? "- Notre histoire" : "Notre histoire"}
             </h2>
             <h2 className={`cursor-pointer hover:text-[#439C91] duration-300 ${isActive("/contact") ? "font-bold text-[#439C91]" : "text-[#999999]"}`} onClick={() => redirect("/contact")}>
-              {isActive("/contact") ? "- Contact Us" : "Contact Us"}
+              {isActive("/contact") ? "- Contacte" : "Contacte"}
             </h2>
           </div>
         </div>

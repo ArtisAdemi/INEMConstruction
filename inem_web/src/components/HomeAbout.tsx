@@ -23,7 +23,7 @@ const HomeAbout: React.FC = () => {
             les limites pour offrir des services exceptionnels.
           </p>
           <button
-            className="text-lg py-3 px-8 mt-5 w-1/2 border-[#439C91] hover:bg-[#439C91] border-[1px] hover:duration-500 duration-500 hover:text-[#FFF] z-30 relative"
+            className="text-lg py-3 px-8 mt-5 md:w-1/2 border-[#439C91] hover:bg-[#439C91] border-[1px] hover:duration-500 duration-500 hover:text-[#FFF] z-30 relative"
             onClick={() => redirect("/about")}
           >
             Notre Histoire
