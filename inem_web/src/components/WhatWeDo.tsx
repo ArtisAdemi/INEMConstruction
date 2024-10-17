@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const services = [
   { title: 'Construction de murs', description: 'Murs porteurs, murs extérieurs et intérieurs en brique, parpaing ou pierre.', icon: '🏗️' },
@@ -18,7 +18,7 @@ const WhatWeDo: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg shadow-lg h-[250px] ${index % 2 === 0 ? 'bg-white text-black' : 'bg-[#439C91]'
+              className={`p-6 rounded-lg shadow-lg h-[250px] ${index % 2 === 0 ? "bg-white text-black" : "bg-[#439C91]"
                 } flex flex-col items-start`}
             >
               <div className="text-4xl mb-4">{service.icon}</div>
