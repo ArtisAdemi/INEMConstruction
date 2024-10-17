@@ -9,7 +9,7 @@ import WhatWeDo3 from "../assets/decorations/WhatWeDo3.png";
 const AboutUs: React.FC = () => {
   return (
     <div>
-      <div className="h-[300px] relative w-screen">
+      <div className="h-[300px] relative">
         <img src={project5} alt="Contact" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Semi-transparent overlay */}
         <div className="absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2">
@@ -19,7 +19,7 @@ const AboutUs: React.FC = () => {
       {/* <HomeAbout /> */}
       <div className="mt-12 px-[8%] xl:px-[16%] justify-between flex flex-col gap-y-6 mb-10">
         <div className="hidden xl:block">
-          <img src={Construction} alt="" />
+          <img src={Construction} alt="" className="w-full" />
         </div>
         <p className="text-xl text-gray-600">Notre histoire commence avec une passion pour la maçonnerie transmise de génération en génération.
           Ce qui a commencé comme un héritage familial est devenu une entreprise florissante, qui s'est forgée une réputation d'excellence et de fiabilité. Nous avons su allier tradition et innovation pour devenir un leader dans notre domaine.</p>

@@ -33,10 +33,15 @@ const WhyUs: React.FC = () => {
         //         </div>
         //     </div>
         // </div>
-        <div className="relative h-[1300px] xl:h-screen">
-            <img src={image} alt="" className="w-full h-screen xl:h-[70%] object-cover brightness-[0.3]" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center xl:justify-normal xl:mt-[6%] z-20">
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 px-[8%] xl:px-[16%]">
+        <div className="relative h-[1500px] sm:h-[1200px] md:h-[1000px] xl:h-[800px]">
+            <img src={image} alt="" className="w-full h-[1500px] sm:h-[1200px] md:h-[1000px]  xl:h-[800px] object-cover brightness-[0.3]" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
+                <div className='flex flex-col justify-center xl:text-center pb-10 xl:pb-24 px-[8%] xl:px-[16%]'>
+                    <h1 className='text-white font-bold text-3xl sm:text-center xl:text-4xl mb-3'>Pourquoi nous choisir ?</h1>
+                    <p className='text-white md:text-center'>Lorsque vous choisissez Inem Construction, vous faites le choix de l'excellence. Voici quelques
+                        raisons pour lesquelles nos clients nous font confiance</p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 gap-8 px-[8%] xl:px-[16%]">
                     {services.map((service, index) => (
                         <div
                             key={index}
