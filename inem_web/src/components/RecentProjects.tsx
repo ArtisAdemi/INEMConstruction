@@ -11,10 +11,10 @@ const RecentProjects: React.FC = () => {
   };
 
   return (
-    <div className="text-center p-5 lg:px-[16%] bg-[#F6F8F7] flex flex-col items-center pb-10">
-      <p className="text-sm text-black mt-10">WORK OF EXCELLENCE</p>
-      <h1 className="text-4xl text-black mb-5">Projets récents</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 mb-5">
+    <div className="text-center p-5 px-[8%] xl:px-[16%] bg-[#F6F8F7] flex flex-col items-center pb-10">
+      {/* <p className="text-sm text-black mt-10">WORK OF EXCELLENCE</p> */}
+      <h1 className="text-4xl text-black mb-5 mt-10">Projets récents</h1>
+      <div className="grid w-full grid-cols-1 lg:grid-cols-3 mb-5">
         {projects.slice(0, 6).map((project, index) => (
           <div
             key={index}
@@ -42,7 +42,7 @@ const RecentProjects: React.FC = () => {
         ))}
       </div>
       <button
-        className="text-lg py-3 px-8 mt-5 w-1/5 border-[#439C91] hover:bg-[#439C91] border-[1px] hover:duration-500 duration-500 hover:text-[#FFF] z-30 relative"
+        className="text-lg py-3 px-8 mt-5 xl:w-1/5 border-[#439C91] hover:bg-[#439C91] border-[1px] hover:duration-500 duration-500 hover:text-[#FFF] z-30 relative"
         onClick={() => redirect("/projects")}
       >
         Voir tous les projets

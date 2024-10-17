@@ -33,10 +33,10 @@ const SingleProject: React.FC = () => {
                 <img src={images ? images[0] : ''} alt="Contact" className='w-full h-full object-cover' />
                 <div className='absolute inset-0 bg-black opacity-50'></div> {/* Semi-transparent overlay */}
                 <div className='absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2'>
-                    <h1 className='text-2xl font-bold'>Projects</h1>
+                    <h1 className='text-2xl font-bold'>Projets</h1>
                 </div>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 w-screen gap-8 py-12 px-[16%]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 w-screen gap-8 py-12 px-[8%] xl:px-[16%]">
                 <div className="relative">
                     <div className="carousel">
                         <div className="carousel-inner relative overflow-hidden w-full">
@@ -53,18 +53,18 @@ const SingleProject: React.FC = () => {
                         <strong>Client:</strong> {project.client}
                     </div>
                     <div className="mb-4">
-                        <strong>Location:</strong> {project.location}
+                        <strong>Emplacement:</strong> {project.location}
                     </div>
                     <div className="mb-4">
-                        <strong>Size:</strong> {project.size}
+                        <strong>Taille:</strong> {project.size}
                     </div>
                     <div className="mb-4">
-                        <strong>Year Completed:</strong> {project.year}
+                        <strong>Année Terminée:</strong> {project.year}
                     </div>
                     <div className="mb-4">
-                        <strong>Categories:</strong> {project.services.join(', ')}
+                        <strong>Catégories:</strong> {project.services.join(', ')}
                     </div>
-                    <button className="bg-[#439C91] hover:opacity-80 text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contact Us</button>
+                    <button className="bg-[#439C91] hover:opacity-80 text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contacte</button>
                 </div>
             </div>
         </div>

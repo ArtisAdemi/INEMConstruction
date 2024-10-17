@@ -108,19 +108,19 @@ const Contact: React.FC = () => {
           <h1 className="text-4xl font-bold">Contacte</h1>
         </div>
       </div>
-      <div className="text-center py-12 px-[16%]">
+      <div className="text-center py-12 px-[8%] xl:px-[16%]">
         <div className="flex flex-col items-center">
           <h2 className="">Que vous ayez un projet de grande envergure ou une idée qui nécessite une touche de maçonnerie artistique, nous sommes là pour vous. Contactez nous pour discuter de vos besoins, demander un devis ou simplement en savoir plus sur notre entreprise de maçonnerie de qualité.</h2>
-          <div className="flex flex-col lg:flex-row justify-center mt-8 space-y-2 lg:space-y-0 lg:space-x-16 w-full lg:w-[80%]">
+          <div className="flex flex-col lg:flex-row justify-center mt-8 space-y-2 lg:space-y-0 lg:space-x-16 w-full lg:w-[100%]">
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
               <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📍</div>
               <h4 className="lg:text-xl text-[#439C91] font-bold">VISIT OUR OFFICE</h4>
-              <p className="text-[#439C91]">9051 Constra Incorporate, USA</p>
+              <p className="text-[#439C91]">9051 Inem Constructions, France</p>
             </div>
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
               <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📧</div>
               <h4 className="lg:text-xl text-[#439C91] font-bold">EMAIL US</h4>
-              <p className="text-[#439C91]">office@Constra.com</p>
+              <p className="text-[#439C91]">inem-constructions@gmail.com</p>
             </div>
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
               <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📞</div>
@@ -133,7 +133,7 @@ const Contact: React.FC = () => {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11810.725693658163!2d21.10579587308559!3d42.26397536913569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354781ff1754e19%3A0xcf247a1d041c6277!2z0JHRgNC-0LQ!5e0!3m2!1sfr!2sfr!4v1727707893938!5m2!1sfr!2sfr" className="w-full h-[400px]" loading="lazy"></iframe>
         </div>
       </div>
-      <div className="mt-8 px-[16%]">
+      <div className="mt-8 px-[8%] xl:px-[16%]">
         <h2 className="text-2xl font-bold">Contactez nous</h2>
         <form className="mt-4 space-y-4 py-6" onSubmit={handleSubmit}>
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:!space-x-4">
