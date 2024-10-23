@@ -48,18 +48,14 @@ const SingleProject: React.FC = () => {
                 </div>
                 <div>
                     <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-                    <p className="text-gray-700 mb-4">{project.description}</p>
                     <div className="mb-4">
                         <strong>Client:</strong> {project.client}
                     </div>
                     <div className="mb-4">
-                        <strong>Emplacement:</strong> {project.location}
+                        <strong>Ville:</strong> {project.location}
                     </div>
                     <div className="mb-4">
                         <strong>Taille:</strong> {project.size}
-                    </div>
-                    <div className="mb-4">
-                        <strong>Année Terminée:</strong> {project.year}
                     </div>
                     <div className="mb-4">
                         <strong>Catégories:</strong> {project.services.join(', ')}
