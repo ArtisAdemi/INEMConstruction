@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
       <div className="justify-between xl:flex gap-3 py-[125px] border-b border-[#999999]">
         <div className="lg:w-[30%] w-full">
           <div className="mb-5 items-end">
-            <img className="w-64 cursor-pointer -ml-12 xl:-mt-4" src={logo} alt="logo image" onClick={() => redirect("/")} />
+            <img className="w-32 cursor-pointer  xl:-mt-4" src={logo} alt="logo image" onClick={() => redirect("/")} />
           </div>
           <p className="text-[#999999] mb-8">Neuf ou rénovation - particulier ou professionnel. Nos aptitudes conviendrons à vos projets les plus pointilleux. Prenez contact sans plus attendre et faire de
             votre rêve une réalité.</p>

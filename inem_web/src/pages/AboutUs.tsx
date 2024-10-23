@@ -1,10 +1,6 @@
 import React from "react";
 import project5 from "../assets/project5.jpg";
 import Construction from "../assets/Construction.jpeg";
-import WhatWeDo1 from "../assets/decorations/WhatWeDo1.png";
-import WhatWeDo2 from "../assets/decorations/WhatWeDo2.png";
-import WhatWeDo3 from "../assets/decorations/WhatWeDo3.png";
-// import HomeAbout from "../components/HomeAbout";
 
 const AboutUs: React.FC = () => {
   return (
@@ -16,7 +12,6 @@ const AboutUs: React.FC = () => {
           <h1 className="text-2xl font-bold">Notre histoire</h1>
         </div>
       </div>
-      {/* <HomeAbout /> */}
       <div className="mt-12 px-[8%] xl:px-[16%] justify-between flex flex-col gap-y-6 mb-10">
         <div className="hidden xl:block">
           <img src={Construction} alt="" className="w-full" />
@@ -29,37 +24,54 @@ const AboutUs: React.FC = () => {
           Notre objectif est de dépasser les attentes de nos clients à chaque étape du processus.</p>
       </div>
       <div className="mt-24 px-[8%] xl:px-[16%] justify-between gap-x-6">
-        <h1 className="text-4xl font-bold text-center">Our Mission!</h1>
+        <h1 className="text-4xl font-bold text-center">Notre mission!</h1>
       </div>
       <div className="mt-8 px-[8%] xl:px-[16%] xl:flex justify-between gap-x-6 mb-10">
-        <div className="item mb-6">
-          <img src={Construction} alt="" />
-          <div className="flex mt-6">
-            <img src={WhatWeDo1} alt="" className="w-12 h-12 mr-4" />
-            <div>
-              <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">ZERO HARM EVERYDAY</h1>
-              <p className="text-[#555]">You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
-            </div>
+        <div className="item mb-6 flex flex-col h-full">
+          <div className="h-64 overflow-hidden">
+            <img src={Construction} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="flex flex-col flex-grow mt-6">
+            <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Préserver et Transmettre un Héritage de Maçonnerie</h1>
+            <p className="text-[#555] flex-grow">Notre mission est de préserver la tradition artisanale
+              de la maçonnerie tout en intégrant des techniques
+              modernes. Nous nous engageons à transmettre notre
+              savoir-faire de génération en génération, en
+              maintenant un équilibre entre l'authenticité de notre
+              métier et l'innovation. Cet héritage est la base de notre
+              succès et nous permet de garantir des réalisations
+              durables et de qualité.</p>
           </div>
         </div>
-        <div className="item mb-6">
-          <img src={Construction} alt="" />
-          <div className="flex mt-6">
-            <img src={WhatWeDo2} alt="" className="w-12 h-12 mr-4" />
-            <div>
-              <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Virtual Construction</h1>
-              <p className="text-[#555]">You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
-            </div>
+        <div className="item mb-6 flex flex-col h-full">
+          <div className="h-64 overflow-hidden">
+            <img src={Construction} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="flex flex-col flex-grow mt-6">
+            <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Offrir une Qualité Inégalée dans Chaque Projet</h1>
+            <p className="text-[#555] flex-grow">Nous nous engageons à réaliser chaque projet
+              avec un engagement total envers la qualité.
+              Notre équipe traite chaque chantier comme une
+              œuvre d'art, en s'assurant que chaque étape, de
+              la première brique au dernier détail, est
+              exécutée avec précision et soin. Nous visons à
+              dépasser les attentes de nos clients en livrant
+              des résultats qui allient esthétique et
+              performance.</p>
           </div>
         </div>
-        <div className="item mb-6">
-          <img src={Construction} alt="" />
-          <div className="flex mt-6">
-            <img src={WhatWeDo3} alt="" className="w-12 h-12 mr-4" />
-            <div>
-              <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Build To Last</h1>
-              <p className="text-[#555]">You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like. Lorem ipsum dolor suscipit.</p>
-            </div>
+        <div className="item mb-6 flex flex-col h-full">
+          <div className="h-64 overflow-hidden">
+            <img src={Construction} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="flex flex-col flex-grow mt-6">
+            <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Allier Tradition et Innovation pour Créer de la Valeur</h1>
+            <p className="text-[#555] flex-grow">Nous croyons en l'importance de l'innovation dans notre
+              métier. En combinant des techniques de maçonnerie
+              traditionnelles avec des méthodes et matériaux innovants, nous
+              créons des solutions modernes et durables. Notre mission est
+              de rester à la pointe de notre domaine tout en conservant
+              l'authenticité et la fiabilité qui font notre réputation.</p>
           </div>
         </div>
       </div>

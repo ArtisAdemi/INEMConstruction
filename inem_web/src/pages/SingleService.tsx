@@ -25,22 +25,24 @@ const SingleService: React.FC = () => {
                     <div className="lg:w-2/3">
                         <h1 className="text-4xl font-bold mb-4">{service.title}</h1>
                         <p className="text-gray-700 mb-8">
-                            {service.description}
-                            <br />
-                            <br />
-                            {service.description}
+                            {typeof service.description === 'string' ? service.description : ''}
                         </p>
+                        {Array.isArray(service.description?.info) && service.description.info.map((item, index) => (
+                            <div key={index} className="mb-4">
+                                <h2 className="text-2xl font-semibold mb-2">{item.title}</h2>
+                                <ul className="list-disc pl-5">
+                                    {item.detailedInfo.map((detail, detailIndex) => (
+                                        <li key={detailIndex}>{detail}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
                     <div className="lg:w-1/3 flex justify-center lg:justify-end mt-8 lg:mt-0">
-                        <img src={service.image} alt="Service" className="w-full object-cover" />
+                        <img src={service.image} alt="Service" className="w-full lg:h-[700px] object-cover" />
                     </div>
                 </div>
-                <div className='py-12'>
-                    <h1 className='text-4xl font-bold mb-4'>Ce que vous devez savoir</h1>
-                    <p className='text-gray-700 mb-8'>
-                        {service.whatYouShouldKnow}
-                    </p>
-                </div>
+
             </div>
         </div>
     );
