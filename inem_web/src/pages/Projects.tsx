@@ -44,9 +44,6 @@ const Projects: React.FC = () => {
                       <h2 className="text-white text-start text-xl font-semibold pb-3">
                         {project.title}
                       </h2>
-                      <p className="text-white text-sm text-start overflow-hidden text-ellipsis line-clamp-2">
-                        {project.description}
-                      </p>
                     </div>
                   </div>
                 </div>

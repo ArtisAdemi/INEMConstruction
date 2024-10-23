@@ -37,13 +37,13 @@ export const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className={`navbar-wrapper w-full items-center ${isAtTop ? "bg-[rgba(255,255,255,0)] text-white" : "bg-[#0E2442] text-white"} flex justify-between px-[8%] pl-[3%] xl:px-[16%] xl:pl-[13%] transition-all duration-1000`}>
+    <div className={`navbar-wrapper w-full items-center ${isAtTop ? "bg-[rgba(255,255,255,0)] text-white" : "bg-[#0E2442] text-white"} flex justify-between px-[8%] pl-[8%] xl:px-[16%] xl:pl-[16%] transition-all duration-1000`}>
       <div className="w-[40%] xl:w-auto">
-        <img className="w-64 h-32 cursor-pointer" src={logo} alt="logo image" onClick={() => redirect("/")} />
+        <img className="w-32 h-28 cursor-pointer" src={logo} alt="logo image" onClick={() => redirect("/")} />
       </div>
       <div className="gap-x-10 items-center hidden xl:flex">
         <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/") ? "font-bold !text-[#439C91]" : "text-white"}`} onClick={() => redirect("/")}>
-          D'accueil
+          Accueil
         </h2>
         <h2 className={`cursor-pointer hover:text-[#439C91] ${isAtTop ? "text-white" : "text-white"} duration-300 ${isActive("/projects") ? "font-bold !text-[#439C91]" : ""}`} onClick={() => redirect("/projects")}>
           Nos réalisations
@@ -84,7 +84,7 @@ export const Navbar: React.FC = () => {
         <div className="flex flex-col gap-y-5 text-white">
           <h2 className={`cursor-pointer hover:text-[#0B63E5] hover:duration-300 font-medium text-lg duration-300 ${isActive("/") ? "font-bold underline" : ""}`} onClick={() => redirect("/")}>
             {isActive("/") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
-            D'accueil
+            Accueil
           </h2>
           <h2 className={`cursor-pointer hover:duration-300 font-medium text-lg duration-300 ${isActive("/projects") ? "font-bold underline" : ""}`} onClick={() => redirect("/projects")}>
             {isActive("/projects") && <img src={rightArrow} alt="right arrow" className="inline mr-2 w-[20px]" />}
