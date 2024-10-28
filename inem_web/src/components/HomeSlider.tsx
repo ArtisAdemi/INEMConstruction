@@ -44,18 +44,26 @@ const HomeSlider: React.FC = () => {
     {
       image: twoworkers,
       text: "Une qualité irréprochable pour votre plus grande satisfaction",
+      buttonText: "Nos réalisations",
+      link: "projects"
     },
     {
       image: Construction,
       text: "Réactivité pour planifier vos projets dans les délais",
+      buttonText: "Nos prestations",
+      link: "services"
     },
     {
       image: Construction2,
       text: "Une transparence avec un excellent rapport qualité prix",
+      buttonText: "Notre histoire",
+      link: "about"
     },
     {
       image: Construction3,
       text: "Licences, certifications et assurances pour votre confort",
+      buttonText: "Contact",
+      link: "contact"
     },
   ];
 
@@ -71,7 +79,7 @@ const HomeSlider: React.FC = () => {
                 {/* <p className="text-white mb-4">{slider.text}</p> */}
               </div>
               <div className="flex align-bottom items-end">
-                <button onClick={() => redirect("/about")} className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:border-[#439C91] hover:duration-500 duration-500 hover:text-[#439C91] z-30 relative">En savoir plus</button>
+                <button onClick={() => redirect(`/${slider.link}`)} className="text-lg py-3 px-8 mt-5 text-white border-2 border-white hover:border-[#439C91] hover:duration-500 duration-500 hover:text-[#439C91] z-30 relative">{slider.buttonText}</button>
               </div>
             </div>
           </div>

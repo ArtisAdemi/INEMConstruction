@@ -1,12 +1,15 @@
 import React from "react";
-import project5 from "../assets/project5.jpg";
-import Construction from "../assets/Construction.jpeg";
+import zeazini3 from "../assets/uphome3.jpg";
+import mission1 from "../assets/peter-thomas-FCiNSflZJNY-unsplash.jpg";
+import mission2 from "../assets/peter-thomas-Wkrrm4z4KuY-unsplash.jpg";
+import mission3 from "../assets/annie-spratt-ilZ9nqFpnTY-unsplash.jpg";
+import Construction from "../assets/peter-thomas-ExzaIWpdulo-unsplash.jpg";
 
 const AboutUs: React.FC = () => {
   return (
     <div>
       <div className="h-[300px] relative">
-        <img src={project5} alt="Contact" className="w-full h-full object-cover" />
+        <img src={zeazini3} alt="Contact" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Semi-transparent overlay */}
         <div className="absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2">
           <h1 className="text-2xl font-bold">Notre histoire</h1>
@@ -29,7 +32,7 @@ const AboutUs: React.FC = () => {
       <div className="mt-8 px-[8%] xl:px-[16%] xl:flex justify-between gap-x-6 mb-10">
         <div className="item mb-6 flex flex-col h-full">
           <div className="h-64 overflow-hidden">
-            <img src={Construction} alt="" className="w-full h-full object-cover" />
+            <img src={mission1} alt="" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col flex-grow mt-6">
             <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Préserver et Transmettre un Héritage de Maçonnerie</h1>
@@ -45,7 +48,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="item mb-6 flex flex-col h-full">
           <div className="h-64 overflow-hidden">
-            <img src={Construction} alt="" className="w-full h-full object-cover" />
+            <img src={mission2} alt="" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col flex-grow mt-6">
             <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Offrir une Qualité Inégalée dans Chaque Projet</h1>
@@ -62,7 +65,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="item mb-6 flex flex-col h-full">
           <div className="h-64 overflow-hidden">
-            <img src={Construction} alt="" className="w-full h-full object-cover" />
+            <img src={mission3} alt="" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col flex-grow mt-6">
             <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Allier Tradition et Innovation pour Créer de la Valeur</h1>

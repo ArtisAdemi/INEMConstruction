@@ -1,5 +1,5 @@
 import React from "react";
-import Construction from "../assets/Construction.jpeg";
+import Construction from "../assets/peter-thomas-ExzaIWpdulo-unsplash.jpg";
 import { useNavigate } from "react-router-dom";
 
 const HomeAbout: React.FC = () => {

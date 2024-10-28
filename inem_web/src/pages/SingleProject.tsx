@@ -60,7 +60,7 @@ const SingleProject: React.FC = () => {
                     <div className="mb-4">
                         <strong>Catégories:</strong> {project.services.join(', ')}
                     </div>
-                    <button className="bg-[#439C91] hover:opacity-80 w-full lg:w-fit text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contacte</button>
+                    <button className="bg-[#439C91] hover:opacity-80 w-full lg:w-fit text-white py-2 px-4 rounded" onClick={() => redirect('/contact')}>Contact</button>
                 </div>
             </div>
         </div>
