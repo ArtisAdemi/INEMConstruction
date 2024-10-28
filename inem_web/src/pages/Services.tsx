@@ -1,12 +1,12 @@
 import React from "react";
-import project5 from "../assets/project5.jpg";
+import zeazini3 from "../assets/uphome2.jpg";
 import { services } from "../assets/services";
 
 const Services: React.FC = () => {
   return (
     <div>
       <div className="h-[300px] relative">
-        <img src={project5} alt="Contact" className="w-full h-full object-cover" />
+        <img src={zeazini3} alt="Contact" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Semi-transparent overlay */}
         <div className="absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2">
           <h1 className="text-2xl font-bold">Nos prestations</h1>

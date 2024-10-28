@@ -27,7 +27,7 @@ const RecentProjects: React.FC = () => {
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center pl-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="flex flex-col absolute bottom-5 left-5">
-                <h2 className="text-white text-xl font-semibold pb-3">
+                <h2 className="text-white text-xl text-start font-semibold pb-3">
                   {project.title}
                 </h2>
                 <button

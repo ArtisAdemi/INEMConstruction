@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
               {isActive("/projects") ? "- Nos réalisations" : "Nos réalisations"}
             </h2>
             <h2 className={`cursor-pointer hover:text-[#439C91] duration-300 ${isActive("/services") ? "font-bold text-[#439C91]" : "text-[#999999]"}`} onClick={() => redirect("/services")}>
-              {isActive("/services") ? "- Services" : "Services"}
+              {isActive("/services") ? "- Nos prestations" : "Nos prestations"}
             </h2>
             <h2 className={`cursor-pointer hover:text-[#439C91] duration-300 ${isActive("/about") ? "font-bold text-[#439C91]" : "text-[#999999]"}`} onClick={() => redirect("/about")}>
               {isActive("/about") ? "- Notre histoire" : "Notre histoire"}

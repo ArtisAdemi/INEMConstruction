@@ -1,4 +1,9 @@
-import project5 from '../assets/project5.jpg';
+import zeazini3 from '../assets/demurs.jpg';
+import renovation from '../assets/renovation.jpg';
+import terace from '../assets/terace.jpeg';
+import exterier from '../assets/exterier.jpeg';
+import facades from '../assets/fasada.jpg';
+import fountation from '../assets/twoworkers.jpg';
 import { WhatWeDo1, WhatWeDo2, WhatWeDo3, WhatWeDo4, WhatWeDo5, WhatWeDo6 } from './decorations';
 
 export const services = [
@@ -44,7 +49,7 @@ export const services = [
                 }
             ]
         },
-        image: project5,
+        image: zeazini3,
         icon: WhatWeDo1, // Replace with actual icon
         whatYouShouldKnow: "Murs porteurs, murs extérieurs et intérieurs en brique, parpaing ou pierre.",
     },
@@ -92,7 +97,7 @@ export const services = [
                 }
             ]
         },
-        image: project5,
+        image: renovation,
         icon: WhatWeDo2, // Replace with actual icon
         whatYouShouldKnow: "Réfection de murs, rejointoiement, consolidation de structures existantes.",
     },
@@ -147,7 +152,7 @@ export const services = [
                 }
             ]
         },
-        image: project5,
+        image: terace,
         icon: WhatWeDo3, // Replace with actual icon
         whatYouShouldKnow: "Création de terrasses en béton, pose de dalles et pavés pour espaces extérieurs.",
     },
@@ -206,7 +211,7 @@ export const services = [
                 }
             ]
         },
-        image: project5,
+        image: fountation,
         icon: WhatWeDo4, // Replace with actual icon
         whatYouShouldKnow: "Mise en œuvre de fondations solides pour vos projets de construction.",
     },
@@ -257,7 +262,7 @@ export const services = [
                 }
             ]
         },
-        image: project5,
+        image: exterier,
         icon: WhatWeDo5, // Replace with actual icon
         whatYouShouldKnow: "Murets, clôtures en maçonnerie, création de piscines.",
     },
@@ -291,7 +296,7 @@ export const services = [
                 },
             ]
         },
-        image: project5,
+        image: facades,
         icon: WhatWeDo6, // Replace with actual icon
         whatYouShouldKnow: "Nettoyage, rénovation et embellissement de façades pour redonner du charme à votre maison.",
     },

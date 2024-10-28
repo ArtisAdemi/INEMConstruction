@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import swal from "sweetalert";
-import project5 from "../assets/project5.jpg";
+import project5 from "../assets/contact.jpg";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -105,27 +105,23 @@ const Contact: React.FC = () => {
         <img src={project5} alt="Contact" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Semi-transparent overlay */}
         <div className="absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2">
-          <h1 className="text-4xl font-bold">Contacte</h1>
+          <h1 className="text-4xl font-bold">Contact</h1>
         </div>
       </div>
       <div className="text-center py-12 px-[8%] xl:px-[16%]">
         <div className="flex flex-col items-center">
           <h2 className="">Que vous ayez un projet de grande envergure ou une idée qui nécessite une touche de maçonnerie artistique, nous sommes là pour vous. Contactez nous pour discuter de vos besoins, demander un devis ou simplement en savoir plus sur notre entreprise de maçonnerie de qualité.</h2>
           <div className="flex flex-col lg:flex-row justify-center mt-8 space-y-2 lg:space-y-0 lg:space-x-16 w-full lg:w-[100%]">
-            <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
-              <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📍</div>
-              <h4 className="lg:text-xl text-[#439C91] font-bold">VISIT OUR OFFICE</h4>
-              <p className="text-[#439C91]">9051 Inem Constructions, France</p>
-            </div>
+
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
               <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📧</div>
               <h4 className="lg:text-xl text-[#439C91] font-bold">EMAIL US</h4>
-              <p className="text-[#439C91]">inem-constructions@gmail.com</p>
+              <p className="text-[#439C91]">inemconstructions@gmail.com</p>
             </div>
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
               <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📞</div>
               <h4 className="lg:text-xl text-[#439C91] font-bold">CALL US</h4>
-              <p className="text-[#439C91]">(+9) 847-291-4353</p>
+              <p className="text-[#439C91]">07-87-30-05-05</p>
             </div>
           </div>
         </div>

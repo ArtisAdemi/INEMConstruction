@@ -1,7 +1,7 @@
 import React from "react";
 import { projects } from "../assets/projects";
 import { useNavigate } from "react-router-dom";
-import project5 from "../assets/project5.jpg";
+import project5 from "../assets/uphome.jpg";
 
 const Projects: React.FC = () => {
   const navigate = useNavigate();
