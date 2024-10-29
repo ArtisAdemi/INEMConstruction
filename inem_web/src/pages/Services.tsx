@@ -21,7 +21,7 @@ const Services: React.FC = () => {
               <div className="mt-3 flex flex-col flex-grow">
                 <div className="w-full">
                   <h2 className="text-xl font-bold mb-2">{service.title}</h2>
-                  <p className="text-gray-700 mb-4">{service.shortDescription}</p>
+                  <div className="text-gray-700 mb-4">{service.shortDescription}</div>
                 </div>
                 <div className="mt-auto">
                   <a href={`/services/${service.slug}`} className="hover:text-[#439C91] font-semibold flex items-center justify-start gap-2 group">
