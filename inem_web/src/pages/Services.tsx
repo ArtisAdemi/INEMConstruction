@@ -6,7 +6,7 @@ const Services: React.FC = () => {
   return (
     <div>
       <div className="h-[300px] relative">
-        <img src={zeazini3} alt="Contact" className="w-full h-full object-cover" />
+        <img src={zeazini3} alt="Contact" className="w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Semi-transparent overlay */}
         <div className="absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2">
           <h1 className="text-2xl font-bold">Nos prestations</h1>
@@ -17,7 +17,7 @@ const Services: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full">
           {services.map((service) => (
             <div key={service.id} className="relative flex flex-col h-full">
-              <img className="w-full h-[192px] object-cover" src={service.image} alt={service.title} />
+              <img className="w-full h-[192px] object-cover" src={service.image} alt={service.title} loading="lazy" />
               <div className="mt-3 flex flex-col flex-grow">
                 <div className="w-full">
                   <h2 className="text-xl font-bold mb-2">{service.title}</h2>

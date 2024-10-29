@@ -37,6 +37,7 @@ const Projects: React.FC = () => {
                   className="w-full h-48 object-cover transform transition-transform duration-300 group-hover:scale-125 z-0"
                   src={project.images[0]}
                   alt={project.title}
+                  loading="lazy"
                 />
                 <div>
                   <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center pl-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">

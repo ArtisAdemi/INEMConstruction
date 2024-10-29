@@ -7,12 +7,12 @@ import renovation from "../assets/customer-support.png"
 import facade2 from "../assets/facade2.png"
 
 const services = [
-  { title: 'Construction de murs', description: 'Murs porteurs, murs extérieurs et intérieurs en brique, parpaing ou pierre.', icon: brickwall },
-  { title: 'Rénovation et réparation', description: 'Réfection de murs, rejointoiement, consolidation de structures existantes.', icon: renovation },
-  { title: 'Terrasses et dallages', description: 'Création de terrasses en béton, pose de dalles et pavés pour espaces extérieurs.', icon: tarace },
-  { title: 'Fondations', description: 'Mise en œuvre de fondations solides pour vos projets de construction.', icon: facade },
-  { title: 'Aménagements extérieurs', description: 'Murets, clôtures en maçonnerie, création de piscines.', icon: exterier },
-  { title: 'Ravalement de façades', description: 'Nettoyage, rénovation et embellissement de façades pour redonner du charme à votre maison.', icon: facade2 },
+  { title: 'Construction de murs', description: 'Murs porteurs, murs extérieurs et intérieurs en brique, parpaing ou pierre.', icon: brickwall, slug: 'construction-de-murs' },
+  { title: 'Rénovation et réparation', description: 'Réfection de murs, rejointoiement, consolidation de structures existantes.', icon: renovation, slug: 'rénovation-et-réparation' },
+  { title: 'Terrasses et dallages', description: 'Création de terrasses en béton, pose de dalles et pavés pour espaces extérieurs.', icon: tarace, slug: 'terrasses-et-dallages' },
+  { title: 'Fondations', description: 'Mise en œuvre de fondations solides pour vos projets de construction.', icon: facade, slug: 'fondations' },
+  { title: 'Aménagements extérieurs', description: 'Murets, clôtures en maçonnerie, création de piscines.', icon: exterier, slug: 'aménagements-extérieurs' },
+  { title: 'Ravalement de façades', description: 'Nettoyage, rénovation et embellissement de façades pour redonner du charme à votre maison.', icon: facade2, slug: 'ravalement-de-façades' },
 ];
 
 const WhatWeDo: React.FC = () => {
@@ -30,6 +30,14 @@ const WhatWeDo: React.FC = () => {
               <img src={service.icon} alt="" className="w-[36px] mb-3" />
               <h3 className="text-xl font-bold mb-2">{service.title}</h3>
               {service.description && <p>{service.description}</p>}
+              <div className="mt-auto">
+                <a href={`/services/${service.slug}`} className="font-semibold flex items-center justify-start gap-2 group">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width={20} height={20} className="">
+                    <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+                  </svg>
+                  <span className="">EN SAVOIR PLUS</span>
+                </a>
+              </div>
             </div>
           ))}
         </div>
