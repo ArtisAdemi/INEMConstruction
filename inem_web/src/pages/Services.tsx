@@ -16,8 +16,8 @@ const Services: React.FC = () => {
         <h1 className="text-4xl font-bold  mb-8 pt-10">Nos prestations</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full">
           {services.map((service) => (
-            <div key={service.id} className="overflow-hidden relative flex flex-col h-full">
-              <img className="w-full h-48 object-cover" src={service.image} alt={service.title} />
+            <div key={service.id} className="relative flex flex-col h-full">
+              <img className="w-full h-[192px] object-cover" src={service.image} alt={service.title} />
               <div className="mt-3 flex flex-col flex-grow">
                 <div className="w-full">
                   <h2 className="text-xl font-bold mb-2">{service.title}</h2>
