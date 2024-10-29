@@ -9,7 +9,7 @@ const AboutUs: React.FC = () => {
   return (
     <div>
       <div className="h-[300px] relative">
-        <img src={zeazini3} alt="Contact" className="w-full h-full object-cover" />
+        <img src={zeazini3} alt="Contact" className="w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Semi-transparent overlay */}
         <div className="absolute top-1/2 inset-x-0 text-center text-white transform -translate-y-1/2">
           <h1 className="text-2xl font-bold">Notre histoire</h1>
@@ -17,7 +17,7 @@ const AboutUs: React.FC = () => {
       </div>
       <div className="mt-12 px-[8%] xl:px-[16%] justify-between flex flex-col gap-y-6 mb-10">
         <div className="hidden xl:block">
-          <img src={Construction} alt="" className="w-full" />
+          <img src={Construction} alt="" className="w-full" loading="lazy" />
         </div>
         <p className="text-xl text-gray-600">Notre histoire commence avec une passion pour la maçonnerie transmise de génération en génération.
           Ce qui a commencé comme un héritage familial est devenu une entreprise florissante, qui s'est forgée une réputation d'excellence et de fiabilité. Nous avons su allier tradition et innovation pour devenir un leader dans notre domaine.</p>
@@ -32,7 +32,7 @@ const AboutUs: React.FC = () => {
       <div className="mt-8 px-[8%] xl:px-[16%] xl:flex justify-between gap-x-6 mb-10">
         <div className="item mb-6 flex flex-col h-full">
           <div className="h-64 overflow-hidden">
-            <img src={mission1} alt="" className="w-full h-full object-cover" />
+            <img src={mission1} alt="" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="flex flex-col flex-grow mt-6">
             <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Préserver et Transmettre un Héritage de Maçonnerie</h1>
@@ -48,7 +48,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="item mb-6 flex flex-col h-full">
           <div className="h-64 overflow-hidden">
-            <img src={mission2} alt="" className="w-full h-full object-cover" />
+            <img src={mission2} alt="" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="flex flex-col flex-grow mt-6">
             <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Offrir une Qualité Inégalée dans Chaque Projet</h1>
@@ -65,7 +65,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="item mb-6 flex flex-col h-full">
           <div className="h-64 overflow-hidden">
-            <img src={mission3} alt="" className="w-full h-full object-cover" />
+            <img src={mission3} alt="" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="flex flex-col flex-grow mt-6">
             <h1 className="text-lg font-bold mb-3 hover:text-[#FF9723] cursor-pointer duration-300">Allier Tradition et Innovation pour Créer de la Valeur</h1>
