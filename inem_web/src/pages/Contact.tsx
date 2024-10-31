@@ -115,18 +115,18 @@ const Contact: React.FC = () => {
 
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
               <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📧</div>
-              <h4 className="lg:text-xl text-[#439C91] font-bold">EMAIL US</h4>
+              <h4 className="lg:text-xl text-[#439C91] font-bold">Écrivez nous!</h4>
               <p className="text-[#439C91]">inemconstructions@gmail.com</p>
             </div>
             <div className="bg-[#252525] text-white p-3 ml-0 w-full lg:w-1/3">
               <div className="text-[#439C91] text-2xl lg:text-4xl mb-4">📞</div>
-              <h4 className="lg:text-xl text-[#439C91] font-bold">CALL US</h4>
+              <h4 className="lg:text-xl text-[#439C91] font-bold">Appelez nous!</h4>
               <p className="text-[#439C91]">07-87-30-05-05</p>
             </div>
           </div>
         </div>
         <div className="mt-8 flex justify-center">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11810.725693658163!2d21.10579587308559!3d42.26397536913569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354781ff1754e19%3A0xcf247a1d041c6277!2z0JHRgNC-0LQ!5e0!3m2!1sfr!2sfr!4v1727707893938!5m2!1sfr!2sfr" className="w-full h-[400px]" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44662.41430173495!2d5.233521677536256!3d45.60258714619436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b2e77fa39af5f%3A0x408ab2ae4be7fa0!2s38300%20Bourgoin-Jallieu%2C%20France!5e0!3m2!1sen!2s!4v1730375720880!5m2!1sen!2s" className="w-full h-[400px]" loading="lazy"></iframe>
         </div>
       </div>
       <div className="mt-8 px-[8%] xl:px-[16%]">

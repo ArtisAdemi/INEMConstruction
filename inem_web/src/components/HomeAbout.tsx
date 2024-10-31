@@ -17,7 +17,7 @@ const HomeAbout: React.FC = () => {
           <h1 className="text-4xl font-bold">Notre histoire</h1>
           <p className="text-gray-600 text-lg mt-6">
             Chez Inem construction , nous incarnons l'art de la maçonnerie
-            depuis de nombreuses années à Bourgoin Jallieu Synonyme de qualité,
+            depuis de nombreuses années à Bourgoin Jallieu. Synonyme de qualité,
             d'expertise et d'engagement envers nos clients. Nous sommes fiers de
             vous présenter une entreprise de maçonnerie qui repousse constamment
             les limites pour offrir des services exceptionnels.

@@ -32,7 +32,7 @@ const RecentProjects: React.FC = () => {
                   {project.title}
                 </h2>
                 <button
-                  className="bg-[#4a9a90] hover:bg-[#92d8d0] text-white py-1 px-2 rounded"
+                  className="bg-[#4a9a90] hover:bg-[#92d8d0] w-[150px]   text-white py-1 px-2 rounded"
                   onClick={() => redirect(`/projects/${project.slug}`)}
                 >
                   En savoir plus

@@ -23,7 +23,7 @@ const WhyUs: React.FC = () => {
                 <div className='flex flex-col justify-center xl:text-center pb-10 xl:pb-8 px-[8%] xl:px-[16%]'>
                     <h1 className='text-white font-bold text-3xl sm:text-center xl:text-4xl mb-3'>Pourquoi nous choisir ?</h1>
                     <p className='text-white md:text-center'>Lorsque vous choisissez Inem Construction, vous faites le choix de l'excellence. Voici quelques
-                        raisons pour lesquelles nos clients nous font confiance</p>
+                        raisons pour lesquelles nos clients nous font confiance: </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 gap-8 px-[8%] xl:px-[16%]">
                     {services.map((service, index) => (
